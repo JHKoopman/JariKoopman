@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		085342E91CC114AF00F16C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085342E81CC114AF00F16C55 /* AppDelegate.swift */; };
-		085342EB1CC114AF00F16C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085342EA1CC114AF00F16C55 /* ViewController.swift */; };
+		085342EB1CC114AF00F16C55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085342EA1CC114AF00F16C55 /* MainViewController.swift */; };
 		085342EE1CC114AF00F16C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085342EC1CC114AF00F16C55 /* Main.storyboard */; };
 		085342F01CC114AF00F16C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085342EF1CC114AF00F16C55 /* Assets.xcassets */; };
 		085342F31CC114AF00F16C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085342F11CC114AF00F16C55 /* LaunchScreen.storyboard */; };
 		085342FE1CC114AF00F16C55 /* Jari_KoopmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085342FD1CC114AF00F16C55 /* Jari_KoopmanTests.swift */; };
 		085343091CC114AF00F16C55 /* Jari_KoopmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343081CC114AF00F16C55 /* Jari_KoopmanUITests.swift */; };
+		085343191CC1152200F16C55 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343171CC1152200F16C55 /* ENSideMenu.swift */; };
+		0853431A1CC1152200F16C55 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343181CC1152200F16C55 /* ENSideMenuNavigationController.swift */; };
+		0853431C1CC115CD00F16C55 /* MySideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853431B1CC115CD00F16C55 /* MySideMenuTableViewController.swift */; };
+		0853431E1CC1174300F16C55 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853431D1CC1174300F16C55 /* MyNavigationController.swift */; };
+		085343321CC11D4600F16C55 /* WWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343311CC11D4600F16C55 /* WWDCViewController.swift */; };
+		085343341CC11D5200F16C55 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343331CC11D5200F16C55 /* EducationViewController.swift */; };
+		085343361CC11D5F00F16C55 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343351CC11D5F00F16C55 /* SkillsViewController.swift */; };
+		085343381CC11D6500F16C55 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343371CC11D6500F16C55 /* FamilyViewController.swift */; };
+		0853433A1CC11D6E00F16C55 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343391CC11D6E00F16C55 /* AboutMeViewController.swift */; };
+		0853433C1CC11D7800F16C55 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */; };
+		0853433E1CC11D8000F16C55 /* ContactMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,7 @@
 /* Begin PBXFileReference section */
 		085342E51CC114AF00F16C55 /* Jari Koopman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jari Koopman.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		085342E81CC114AF00F16C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		085342EA1CC114AF00F16C55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		085342EA1CC114AF00F16C55 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		085342ED1CC114AF00F16C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		085342EF1CC114AF00F16C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		085342F21CC114AF00F16C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,17 @@
 		085343041CC114AF00F16C55 /* Jari KoopmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jari KoopmanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		085343081CC114AF00F16C55 /* Jari_KoopmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jari_KoopmanUITests.swift; sourceTree = "<group>"; };
 		0853430A1CC114AF00F16C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085343171CC1152200F16C55 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		085343181CC1152200F16C55 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		0853431B1CC115CD00F16C55 /* MySideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySideMenuTableViewController.swift; sourceTree = "<group>"; };
+		0853431D1CC1174300F16C55 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		085343311CC11D4600F16C55 /* WWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCViewController.swift; sourceTree = "<group>"; };
+		085343331CC11D5200F16C55 /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		085343351CC11D5F00F16C55 /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		085343371CC11D6500F16C55 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
+		085343391CC11D6E00F16C55 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +119,10 @@
 		085342E71CC114AF00F16C55 /* Jari Koopman */ = {
 			isa = PBXGroup;
 			children = (
-				085342E81CC114AF00F16C55 /* AppDelegate.swift */,
-				085342EA1CC114AF00F16C55 /* ViewController.swift */,
-				085342EC1CC114AF00F16C55 /* Main.storyboard */,
-				085342EF1CC114AF00F16C55 /* Assets.xcassets */,
-				085342F11CC114AF00F16C55 /* LaunchScreen.storyboard */,
-				085342F41CC114AF00F16C55 /* Info.plist */,
+				085343221CC11C3700F16C55 /* Supporting Files */,
+				085343211CC11C2D00F16C55 /* Controllers */,
+				085343201CC11C2700F16C55 /* UI */,
+				085343161CC1150200F16C55 /* Side Menu */,
 			);
 			path = "Jari Koopman";
 			sourceTree = "<group>";
@@ -123,6 +143,51 @@
 				0853430A1CC114AF00F16C55 /* Info.plist */,
 			);
 			path = "Jari KoopmanUITests";
+			sourceTree = "<group>";
+		};
+		085343161CC1150200F16C55 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				085343171CC1152200F16C55 /* ENSideMenu.swift */,
+				085343181CC1152200F16C55 /* ENSideMenuNavigationController.swift */,
+				0853431B1CC115CD00F16C55 /* MySideMenuTableViewController.swift */,
+				0853431D1CC1174300F16C55 /* MyNavigationController.swift */,
+			);
+			name = "Side Menu";
+			sourceTree = "<group>";
+		};
+		085343201CC11C2700F16C55 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				085342EC1CC114AF00F16C55 /* Main.storyboard */,
+				085342F11CC114AF00F16C55 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		085343211CC11C2D00F16C55 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				085342EA1CC114AF00F16C55 /* MainViewController.swift */,
+				085343311CC11D4600F16C55 /* WWDCViewController.swift */,
+				085343331CC11D5200F16C55 /* EducationViewController.swift */,
+				085343351CC11D5F00F16C55 /* SkillsViewController.swift */,
+				085343371CC11D6500F16C55 /* FamilyViewController.swift */,
+				085343391CC11D6E00F16C55 /* AboutMeViewController.swift */,
+				0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */,
+				0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		085343221CC11C3700F16C55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				085342E81CC114AF00F16C55 /* AppDelegate.swift */,
+				085342EF1CC114AF00F16C55 /* Assets.xcassets */,
+				085342F41CC114AF00F16C55 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				085342EB1CC114AF00F16C55 /* ViewController.swift in Sources */,
+				0853433C1CC11D7800F16C55 /* AchievementsViewController.swift in Sources */,
+				0853431A1CC1152200F16C55 /* ENSideMenuNavigationController.swift in Sources */,
+				0853431C1CC115CD00F16C55 /* MySideMenuTableViewController.swift in Sources */,
+				085343191CC1152200F16C55 /* ENSideMenu.swift in Sources */,
+				085343341CC11D5200F16C55 /* EducationViewController.swift in Sources */,
+				085343381CC11D6500F16C55 /* FamilyViewController.swift in Sources */,
+				085343361CC11D5F00F16C55 /* SkillsViewController.swift in Sources */,
+				0853431E1CC1174300F16C55 /* MyNavigationController.swift in Sources */,
+				085343321CC11D4600F16C55 /* WWDCViewController.swift in Sources */,
+				0853433E1CC11D8000F16C55 /* ContactMeViewController.swift in Sources */,
+				085342EB1CC114AF00F16C55 /* MainViewController.swift in Sources */,
 				085342E91CC114AF00F16C55 /* AppDelegate.swift in Sources */,
+				0853433A1CC11D6E00F16C55 /* AboutMeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
