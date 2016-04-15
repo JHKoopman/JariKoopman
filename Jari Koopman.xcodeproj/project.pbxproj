@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		085342E91CC114AF00F16C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085342E81CC114AF00F16C55 /* AppDelegate.swift */; };
+		085342EB1CC114AF00F16C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085342EA1CC114AF00F16C55 /* ViewController.swift */; };
+		085342EE1CC114AF00F16C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085342EC1CC114AF00F16C55 /* Main.storyboard */; };
+		085342F01CC114AF00F16C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085342EF1CC114AF00F16C55 /* Assets.xcassets */; };
+		085342F31CC114AF00F16C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085342F11CC114AF00F16C55 /* LaunchScreen.storyboard */; };
+		085342FE1CC114AF00F16C55 /* Jari_KoopmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085342FD1CC114AF00F16C55 /* Jari_KoopmanTests.swift */; };
+		085343091CC114AF00F16C55 /* Jari_KoopmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343081CC114AF00F16C55 /* Jari_KoopmanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		085342FA1CC114AF00F16C55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085342DD1CC114AF00F16C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 085342E41CC114AF00F16C55;
+			remoteInfo = "Jari Koopman";
+		};
+		085343051CC114AF00F16C55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085342DD1CC114AF00F16C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 085342E41CC114AF00F16C55;
+			remoteInfo = "Jari Koopman";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085342E51CC114AF00F16C55 /* Jari Koopman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jari Koopman.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		085342E81CC114AF00F16C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		085342EA1CC114AF00F16C55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		085342ED1CC114AF00F16C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		085342EF1CC114AF00F16C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		085342F21CC114AF00F16C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		085342F41CC114AF00F16C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085342F91CC114AF00F16C55 /* Jari KoopmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jari KoopmanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		085342FD1CC114AF00F16C55 /* Jari_KoopmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jari_KoopmanTests.swift; sourceTree = "<group>"; };
+		085342FF1CC114AF00F16C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085343041CC114AF00F16C55 /* Jari KoopmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jari KoopmanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		085343081CC114AF00F16C55 /* Jari_KoopmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jari_KoopmanUITests.swift; sourceTree = "<group>"; };
+		0853430A1CC114AF00F16C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		085342E21CC114AF00F16C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085342F61CC114AF00F16C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085343011CC114AF00F16C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085342DC1CC114AF00F16C55 = {
+			isa = PBXGroup;
+			children = (
+				085342E71CC114AF00F16C55 /* Jari Koopman */,
+				085342FC1CC114AF00F16C55 /* Jari KoopmanTests */,
+				085343071CC114AF00F16C55 /* Jari KoopmanUITests */,
+				085342E61CC114AF00F16C55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		085342E61CC114AF00F16C55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085342E51CC114AF00F16C55 /* Jari Koopman.app */,
+				085342F91CC114AF00F16C55 /* Jari KoopmanTests.xctest */,
+				085343041CC114AF00F16C55 /* Jari KoopmanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085342E71CC114AF00F16C55 /* Jari Koopman */ = {
+			isa = PBXGroup;
+			children = (
+				085342E81CC114AF00F16C55 /* AppDelegate.swift */,
+				085342EA1CC114AF00F16C55 /* ViewController.swift */,
+				085342EC1CC114AF00F16C55 /* Main.storyboard */,
+				085342EF1CC114AF00F16C55 /* Assets.xcassets */,
+				085342F11CC114AF00F16C55 /* LaunchScreen.storyboard */,
+				085342F41CC114AF00F16C55 /* Info.plist */,
+			);
+			path = "Jari Koopman";
+			sourceTree = "<group>";
+		};
+		085342FC1CC114AF00F16C55 /* Jari KoopmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				085342FD1CC114AF00F16C55 /* Jari_KoopmanTests.swift */,
+				085342FF1CC114AF00F16C55 /* Info.plist */,
+			);
+			path = "Jari KoopmanTests";
+			sourceTree = "<group>";
+		};
+		085343071CC114AF00F16C55 /* Jari KoopmanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				085343081CC114AF00F16C55 /* Jari_KoopmanUITests.swift */,
+				0853430A1CC114AF00F16C55 /* Info.plist */,
+			);
+			path = "Jari KoopmanUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		085342E41CC114AF00F16C55 /* Jari Koopman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0853430D1CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari Koopman" */;
+			buildPhases = (
+				085342E11CC114AF00F16C55 /* Sources */,
+				085342E21CC114AF00F16C55 /* Frameworks */,
+				085342E31CC114AF00F16C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jari Koopman";
+			productName = "Jari Koopman";
+			productReference = 085342E51CC114AF00F16C55 /* Jari Koopman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		085342F81CC114AF00F16C55 /* Jari KoopmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085343101CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari KoopmanTests" */;
+			buildPhases = (
+				085342F51CC114AF00F16C55 /* Sources */,
+				085342F61CC114AF00F16C55 /* Frameworks */,
+				085342F71CC114AF00F16C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				085342FB1CC114AF00F16C55 /* PBXTargetDependency */,
+			);
+			name = "Jari KoopmanTests";
+			productName = "Jari KoopmanTests";
+			productReference = 085342F91CC114AF00F16C55 /* Jari KoopmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		085343031CC114AF00F16C55 /* Jari KoopmanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085343131CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari KoopmanUITests" */;
+			buildPhases = (
+				085343001CC114AF00F16C55 /* Sources */,
+				085343011CC114AF00F16C55 /* Frameworks */,
+				085343021CC114AF00F16C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				085343061CC114AF00F16C55 /* PBXTargetDependency */,
+			);
+			name = "Jari KoopmanUITests";
+			productName = "Jari KoopmanUITests";
+			productReference = 085343041CC114AF00F16C55 /* Jari KoopmanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		085342DD1CC114AF00F16C55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JarICT;
+				TargetAttributes = {
+					085342E41CC114AF00F16C55 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					085342F81CC114AF00F16C55 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 085342E41CC114AF00F16C55;
+					};
+					085343031CC114AF00F16C55 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 085342E41CC114AF00F16C55;
+					};
+				};
+			};
+			buildConfigurationList = 085342E01CC114AF00F16C55 /* Build configuration list for PBXProject "Jari Koopman" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 085342DC1CC114AF00F16C55;
+			productRefGroup = 085342E61CC114AF00F16C55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				085342E41CC114AF00F16C55 /* Jari Koopman */,
+				085342F81CC114AF00F16C55 /* Jari KoopmanTests */,
+				085343031CC114AF00F16C55 /* Jari KoopmanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		085342E31CC114AF00F16C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085342F31CC114AF00F16C55 /* LaunchScreen.storyboard in Resources */,
+				085342F01CC114AF00F16C55 /* Assets.xcassets in Resources */,
+				085342EE1CC114AF00F16C55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085342F71CC114AF00F16C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085343021CC114AF00F16C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085342E11CC114AF00F16C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085342EB1CC114AF00F16C55 /* ViewController.swift in Sources */,
+				085342E91CC114AF00F16C55 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085342F51CC114AF00F16C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085342FE1CC114AF00F16C55 /* Jari_KoopmanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		085343001CC114AF00F16C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085343091CC114AF00F16C55 /* Jari_KoopmanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		085342FB1CC114AF00F16C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 085342E41CC114AF00F16C55 /* Jari Koopman */;
+			targetProxy = 085342FA1CC114AF00F16C55 /* PBXContainerItemProxy */;
+		};
+		085343061CC114AF00F16C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 085342E41CC114AF00F16C55 /* Jari Koopman */;
+			targetProxy = 085343051CC114AF00F16C55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		085342EC1CC114AF00F16C55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085342ED1CC114AF00F16C55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		085342F11CC114AF00F16C55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085342F21CC114AF00F16C55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0853430B1CC114AF00F16C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0853430C1CC114AF00F16C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0853430E1CC114AF00F16C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Jari Koopman/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-Koopman";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0853430F1CC114AF00F16C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Jari Koopman/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-Koopman";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		085343111CC114AF00F16C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Jari KoopmanTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-KoopmanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jari Koopman.app/Jari Koopman";
+			};
+			name = Debug;
+		};
+		085343121CC114AF00F16C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Jari KoopmanTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-KoopmanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jari Koopman.app/Jari Koopman";
+			};
+			name = Release;
+		};
+		085343141CC114AF00F16C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jari KoopmanUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-KoopmanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jari Koopman";
+			};
+			name = Debug;
+		};
+		085343151CC114AF00F16C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jari KoopmanUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-KoopmanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jari Koopman";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		085342E01CC114AF00F16C55 /* Build configuration list for PBXProject "Jari Koopman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0853430B1CC114AF00F16C55 /* Debug */,
+				0853430C1CC114AF00F16C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0853430D1CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari Koopman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0853430E1CC114AF00F16C55 /* Debug */,
+				0853430F1CC114AF00F16C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		085343101CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari KoopmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085343111CC114AF00F16C55 /* Debug */,
+				085343121CC114AF00F16C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		085343131CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari KoopmanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085343141CC114AF00F16C55 /* Debug */,
+				085343151CC114AF00F16C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 085342DD1CC114AF00F16C55 /* Project object */;
+}
