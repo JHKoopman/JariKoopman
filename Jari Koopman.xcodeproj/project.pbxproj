@@ -25,6 +25,7 @@
 		0853433A1CC11D6E00F16C55 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343391CC11D6E00F16C55 /* AboutMeViewController.swift */; };
 		0853433C1CC11D7800F16C55 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */; };
 		0853433E1CC11D8000F16C55 /* ContactMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */; };
+		5792DBB81CC4C1DD0089D19B /* RandomFactGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792DBB71CC4C1DD0089D19B /* RandomFactGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		085343391CC11D6E00F16C55 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactMeViewController.swift; sourceTree = "<group>"; };
+		5792DBB71CC4C1DD0089D19B /* RandomFactGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomFactGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				085342E81CC114AF00F16C55 /* AppDelegate.swift */,
 				085342EF1CC114AF00F16C55 /* Assets.xcassets */,
 				085342F41CC114AF00F16C55 /* Info.plist */,
+				5792DBB71CC4C1DD0089D19B /* RandomFactGenerator.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				0853431E1CC1174300F16C55 /* MyNavigationController.swift in Sources */,
 				085343321CC11D4600F16C55 /* WWDCViewController.swift in Sources */,
 				0853433E1CC11D8000F16C55 /* ContactMeViewController.swift in Sources */,
+				5792DBB81CC4C1DD0089D19B /* RandomFactGenerator.swift in Sources */,
 				085342EB1CC114AF00F16C55 /* MainViewController.swift in Sources */,
 				085342E91CC114AF00F16C55 /* AppDelegate.swift in Sources */,
 				0853433A1CC11D6E00F16C55 /* AboutMeViewController.swift in Sources */,
@@ -558,6 +562,7 @@
 				0853430F1CC114AF00F16C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		085343101CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari KoopmanTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +571,7 @@
 				085343121CC114AF00F16C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		085343131CC114AF00F16C55 /* Build configuration list for PBXNativeTarget "Jari KoopmanUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +580,7 @@
 				085343151CC114AF00F16C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
