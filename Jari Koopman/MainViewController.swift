@@ -14,12 +14,19 @@ class ViewController: UIViewController, ENSideMenuDelegate {
         super.viewDidLoad()
         self.sideMenuController()?.sideMenu?.delegate = self
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ViewController.openSideMenu))
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func openSideMenu() {
+        toggleSideMenuView()
     }
     
     // MARK: - ENSideMenu Delegate

@@ -12,6 +12,9 @@ class WWDCViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(WWDCViewController.openSideMenu))
+
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +24,9 @@ class WWDCViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func openSideMenu() {
+        toggleSideMenuView()
+    }
 
     /*
     // MARK: - Navigation

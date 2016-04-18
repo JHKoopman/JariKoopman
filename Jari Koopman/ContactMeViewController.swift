@@ -12,6 +12,8 @@ class ContactMeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ContactMeViewController.openSideMenu))
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +21,10 @@ class ContactMeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func openSideMenu(){
+        toggleSideMenuView()
     }
     
 

@@ -13,6 +13,9 @@ class AchievementsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(AchievementsViewController.openSideMenu))
+
 
         // Do any additional setup after loading the view.
     }
@@ -22,6 +25,9 @@ class AchievementsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func openSideMenu() {
+        toggleSideMenuView()
+    }
 
     /*
     // MARK: - Navigation

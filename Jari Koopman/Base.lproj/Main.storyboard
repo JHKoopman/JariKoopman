@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dx9-Ch-lEj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dx9-Ch-lEj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -35,7 +35,7 @@
         <!--Education-->
         <scene sceneID="qgO-d6-Dc7">
             <objects>
-                <viewController storyboardIdentifier="EducationViewController" title="Education" id="lt0-fX-5LK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EducationViewController" title="Education" id="lt0-fX-5LK" customClass="EducationViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vcC-Ko-mh4"/>
                         <viewControllerLayoutGuide type="bottom" id="VEF-pT-xBD"/>
@@ -61,7 +61,7 @@
         <!--Family-->
         <scene sceneID="VKU-wY-WVs">
             <objects>
-                <viewController storyboardIdentifier="FamilyViewController" title="Family" id="pDT-CY-T9i" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FamilyViewController" title="Family" id="pDT-CY-T9i" customClass="FamilyViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bqa-6E-cRn"/>
                         <viewControllerLayoutGuide type="bottom" id="Rhh-8v-Mhe"/>
@@ -87,7 +87,7 @@
         <!--Skills-->
         <scene sceneID="PCU-yX-nnM">
             <objects>
-                <viewController storyboardIdentifier="SkillsViewController" title="Skills" id="ZAT-Yl-cvg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SkillsViewController" title="Skills" id="ZAT-Yl-cvg" customClass="SkillsViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FPa-Un-Q0b"/>
                         <viewControllerLayoutGuide type="bottom" id="m2U-eP-p2d"/>
@@ -113,7 +113,7 @@
         <!--Things I've done-->
         <scene sceneID="kou-ai-rke">
             <objects>
-                <viewController storyboardIdentifier="AchievementsViewController" title="Things I've done" id="v7R-1f-K64" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AchievementsViewController" title="Things I've done" id="v7R-1f-K64" customClass="AchievementsViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="shR-el-mvm"/>
                         <viewControllerLayoutGuide type="bottom" id="xlC-fa-sZe"/>
@@ -139,7 +139,7 @@
         <!--WWDC-->
         <scene sceneID="y7t-rg-QhG">
             <objects>
-                <viewController storyboardIdentifier="WWDCViewController" title="WWDC" id="M6l-T4-puu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WWDCViewController" title="WWDC" id="M6l-T4-puu" customClass="WWDCViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JED-Ir-fRa"/>
                         <viewControllerLayoutGuide type="bottom" id="amH-8j-zai"/>
@@ -165,7 +165,7 @@
         <!--Contact Me-->
         <scene sceneID="LBv-qP-OiM">
             <objects>
-                <viewController storyboardIdentifier="ContactMeViewController" title="Contact Me" id="C1Q-Cp-cWG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactMeViewController" title="Contact Me" id="C1Q-Cp-cWG" customClass="ContactMeViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LHq-gU-FkT"/>
                         <viewControllerLayoutGuide type="bottom" id="GLY-mZ-zga"/>
@@ -191,7 +191,7 @@
         <!--About Me-->
         <scene sceneID="8SV-62-X7G">
             <objects>
-                <viewController storyboardIdentifier="AboutMeViewController" title="About Me" id="OLc-b0-JtN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutMeViewController" title="About Me" id="OLc-b0-JtN" customClass="AboutMeViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FQX-VA-cIk"/>
                         <viewControllerLayoutGuide type="bottom" id="Edm-O7-qwd"/>
