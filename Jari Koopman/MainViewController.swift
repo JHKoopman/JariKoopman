@@ -9,16 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController, ENSideMenuDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.sideMenuController()?.sideMenu?.delegate = self
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ViewController.openSideMenu))
-
+        
         
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,6 +30,7 @@ class ViewController: UIViewController, ENSideMenuDelegate {
         toggleSideMenuView()
     }
     
+        
     // MARK: - ENSideMenu Delegate
     func sideMenuWillOpen() {
         print("sideMenuWillOpen")
