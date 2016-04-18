@@ -175,14 +175,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDC-f6-Okm">
-                                <rect key="frame" x="232" y="289" width="89" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or call me at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDC-f6-Okm">
+                                <rect key="frame" x="249" y="95" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can send me a mail at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-od-4r9">
+                                <rect key="frame" x="198" y="28" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-OB-ewU">
+                                <rect key="frame" x="198" y="245" width="48" height="48"/>
+                                <state key="normal" image="Twitter-48"/>
+                                <connections>
+                                    <action selector="twitterPressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="OhE-za-Dim"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAd-Em-uzc">
+                                <rect key="frame" x="244" y="124" width="113" height="30"/>
+                                <state key="normal" title="+31 591 362764"/>
+                                <connections>
+                                    <action selector="phonePressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="eMW-dk-o2Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn9-Qx-xor">
+                                <rect key="frame" x="354" y="245" width="48" height="48"/>
+                                <state key="normal" image="Facebook-48"/>
+                                <connections>
+                                    <action selector="facebookPressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="O89-w1-4Sy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksb-In-ujf">
+                                <rect key="frame" x="233" y="57" width="135" height="30"/>
+                                <state key="normal" title="j.koopman@jarict.nl"/>
+                                <connections>
+                                    <action selector="mailPressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="eDz-6s-P2h"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="108" id="0WQ-Qf-vOz"/>
+                            <constraint firstItem="GLY-mZ-zga" firstAttribute="top" secondItem="Qth-OB-ewU" secondAttribute="bottom" constant="307" id="AS4-PS-DeK"/>
+                            <constraint firstItem="zAd-Em-uzc" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="C65-0h-6rw"/>
+                            <constraint firstItem="GLY-mZ-zga" firstAttribute="top" secondItem="Gn9-Qx-xor" secondAttribute="bottom" constant="307" id="CCf-CA-jPh"/>
+                            <constraint firstItem="cDC-f6-Okm" firstAttribute="top" secondItem="Ksb-In-ujf" secondAttribute="bottom" constant="8" id="LB6-vf-7d3"/>
+                            <constraint firstItem="LZb-od-4r9" firstAttribute="top" secondItem="LHq-gU-FkT" secondAttribute="bottom" constant="8" id="Qe4-0l-Wmp"/>
+                            <constraint firstItem="zAd-Em-uzc" firstAttribute="top" secondItem="cDC-f6-Okm" secondAttribute="bottom" constant="8" id="ZH1-oQ-nXe"/>
+                            <constraint firstItem="cDC-f6-Okm" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="bHI-L1-TGM"/>
+                            <constraint firstItem="LZb-od-4r9" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="-48" id="cvA-Qm-211"/>
+                            <constraint firstItem="Ksb-In-ujf" firstAttribute="top" secondItem="LZb-od-4r9" secondAttribute="bottom" constant="8" id="qZY-Ds-Wub"/>
+                            <constraint firstItem="Ksb-In-ujf" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="rCr-7w-ctA"/>
+                            <constraint firstItem="LZb-od-4r9" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="yqX-al-F2q"/>
+                            <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="LZb-od-4r9" secondAttribute="trailing" constant="-48" id="zhT-Jb-ACE"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Gn9-Qx-xor"/>
+                                <include reference="Ksb-In-ujf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Qe4-0l-Wmp"/>
+                                <include reference="cvA-Qm-211"/>
+                                <include reference="yqX-al-F2q"/>
+                                <include reference="qZY-Ds-Wub"/>
+                                <include reference="rCr-7w-ctA"/>
+                                <include reference="LB6-vf-7d3"/>
+                                <include reference="bHI-L1-TGM"/>
+                                <include reference="C65-0h-6rw"/>
+                                <include reference="ZH1-oQ-nXe"/>
+                                <include reference="0WQ-Qf-vOz"/>
+                                <include reference="zhT-Jb-ACE"/>
+                                <include reference="AS4-PS-DeK"/>
+                                <include reference="CCf-CA-jPh"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbZ-Uc-DhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -603,4 +673,8 @@ Watching movies or YouTube videos</string>
             <point key="canvasLocation" x="451" y="332"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Facebook-48" width="48" height="48"/>
+        <image name="Twitter-48" width="48" height="48"/>
+    </resources>
 </document>
