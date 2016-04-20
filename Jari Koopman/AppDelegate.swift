@@ -10,15 +10,27 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    enum ShortcutType: String {
+        case about = "About"
+        case contact = "Contact"
+    }
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        var launchedFromShortCut = false
+        // check for shortcut item
+        if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsShortcutItemKey] as? UIApplicationShortcutItem {
+            launchedFromShortCut = true
+            handleShortcutItem(shortcutItem)
+            
+        }
+        //Return false incase application was lanched from shorcut to prevent
+        //application(_:performActionForShortcutItem:completionHandler:) from being called
+        return !launchedFromShortCut
     }
-
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -40,6 +52,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func handleShortcutItem(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        var handled = false
+        // get type string from shortcutItem
+        if let shortcutType = ShortcutType.init(rawValue: shortcutItem.type) {
+            // Get root navigation viewcontroller and its first controller
+            let rootNavigationViewController = window!.rootViewController as? MyNavigationController
+            let rootViewController = rootNavigationViewController?.viewControllers.first as UIViewController?
+            // pop to root view controller so that approperiete seque can be performed
+            rootNavigationViewController?.popToRootViewControllerAnimated(false)
+            
+            switch shortcutType {
+            case .about:
+                rootViewController?.performSegueWithIdentifier("showAbout", sender: nil)
+                handled = true
+            case .contact:
+                rootViewController?.performSegueWithIdentifier("showContact", sender: nil)
+                handled = true
+            }
+        }
+        return handled
+    }
+
 
 
 }
