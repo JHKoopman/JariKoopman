@@ -39,41 +39,9 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
         }
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*CGFloat(imagesArray.count), self.scrollView.frame.height)
         self.scrollView.delegate = self
-
-        
-        //1 
-//        self.scrollView.frame = (CGRectMake(0, 0, self.view.frame.width, 300))
-//        let scrollViewWidth = self.scrollView.frame.width
-//        let scrollViewHeight = self.scrollView.frame.height
-        //2
         textLabel.textAlignment = .Center
         textLabel.textColor = UIColor.blackColor()
-        //3
-//        let imgOne = UIImageView(frame: CGRectMake(0, 0, scrollViewWidth, scrollViewHeight))
-//        imgOne.contentMode = .ScaleAspectFit
-//        imgOne.image = UIImage(named: "swift-og")
-//        let imgTwo = UIImageView(frame: CGRectMake(scrollViewWidth, 0, scrollViewWidth, scrollViewHeight))
-//        imgTwo.contentMode = .ScaleAspectFit
-//        imgTwo.image = UIImage(named: "swift-og")
-//
-//        let imgThree = UIImageView(frame: CGRectMake(scrollViewWidth*2, 0, scrollViewWidth, scrollViewHeight))
-//        imgThree.contentMode = .ScaleAspectFit
-//        imgThree.image = UIImage(named: "swift-og")
-//
-//        let imgFour = UIImageView(frame: CGRectMake(scrollViewWidth*3, 0, scrollViewWidth, scrollViewHeight))
-//        imgFour.contentMode = .ScaleAspectFit
-//        imgFour.image = UIImage(named: "swift-og")
-//
-//        
-//        self.scrollView.addSubview(imgOne)
-//        self.scrollView.addSubview(imgTwo)
-//        self.scrollView.addSubview(imgThree)
-//        self.scrollView.addSubview(imgFour)
-//        //4
-//        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*4, self.scrollView.frame.height)
-//        self.scrollView.delegate = self
         self.pageControl.currentPage = 0
-        // Do any additional setup after loading the view.
         scrollViewDidEndDecelerating(scrollView)
     }
 
@@ -105,15 +73,4 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
             textLabel.text = "page 4"
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
