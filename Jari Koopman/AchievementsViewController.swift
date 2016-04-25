@@ -56,6 +56,7 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.delegate = self
         self.pageControl.currentPage = 0
         // Do any additional setup after loading the view.
+        scrollViewDidEndDecelerating(scrollView)
     }
 
     override func didReceiveMemoryWarning() {

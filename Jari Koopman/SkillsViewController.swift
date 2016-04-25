@@ -44,16 +44,16 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
         descriptionLabel.textColor = UIColor.whiteColor()
         //3
         let imgOne = UIImageView(frame: CGRectMake(0, 0, scrolLViewWidth, scrollViewHeight))
-        imgOne.contentMode = .Center
+        imgOne.contentMode = .ScaleAspectFit
         imgOne.image = UIImage(named: "Swift on mac")
         let imgTwo = UIImageView(frame: CGRectMake(scrolLViewWidth, 0, scrolLViewWidth, scrollViewHeight))
-        imgTwo.contentMode = .Center
+        imgTwo.contentMode = .ScaleAspectFit
         imgTwo.image = UIImage(named: "Mac with Gear")
         let imgThree = UIImageView(frame: CGRectMake(scrolLViewWidth*2, 0, scrolLViewWidth, scrollViewHeight))
-        imgThree.contentMode = .Center
+        imgThree.contentMode = .ScaleAspectFit
         imgThree.image = UIImage(named: "Mac with Gear")
         let imgFour = UIImageView(frame: CGRectMake(scrolLViewWidth*3, 0, scrolLViewWidth, scrollViewHeight))
-        imgFour.contentMode = .Center
+        imgFour.contentMode = .ScaleAspectFit
         imgFour.image = UIImage(named: "Swift on mac")
         
         

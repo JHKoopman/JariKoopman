@@ -510,6 +510,7 @@
                             <constraint firstItem="bzt-5y-A8u" firstAttribute="centerX" secondItem="eEY-V6-biZ" secondAttribute="centerX" id="EwH-Ot-b6Z"/>
                             <constraint firstAttribute="trailing" secondItem="bzt-5y-A8u" secondAttribute="trailing" id="HMt-zZ-uIS"/>
                             <constraint firstItem="Fms-Mb-u3Q" firstAttribute="leading" secondItem="eEY-V6-biZ" secondAttribute="leading" constant="20" id="KXO-7u-lOl"/>
+                            <constraint firstItem="bzt-5y-A8u" firstAttribute="top" secondItem="eEY-V6-biZ" secondAttribute="top" id="MAJ-GU-H8L"/>
                             <constraint firstItem="bUn-Lu-KLJ" firstAttribute="top" secondItem="bzt-5y-A8u" secondAttribute="bottom" id="YWE-3H-VQf"/>
                             <constraint firstAttribute="trailing" secondItem="Fms-Mb-u3Q" secondAttribute="trailing" constant="20" id="b5h-Dd-tfd"/>
                             <constraint firstItem="bzt-5y-A8u" firstAttribute="leading" secondItem="eEY-V6-biZ" secondAttribute="leading" id="eNZ-8u-Km2"/>
@@ -517,6 +518,11 @@
                                 <variation key="widthClass=compact" constant="244"/>
                             </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MAJ-GU-H8L"/>
+                            </mask>
+                        </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="bzt-5y-A8u"/>
@@ -524,9 +530,10 @@
                                 <include reference="awj-2m-HnU"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="66y-U5-X03"/>
+                                <exclude reference="66y-U5-X03"/>
                                 <include reference="EwH-Ot-b6Z"/>
                                 <include reference="HMt-zZ-uIS"/>
+                                <include reference="MAJ-GU-H8L"/>
                                 <include reference="eNZ-8u-Km2"/>
                                 <include reference="KXO-7u-lOl"/>
                                 <include reference="b5h-Dd-tfd"/>
@@ -547,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1H-0z-DU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="1867"/>
+            <point key="canvasLocation" x="1134" y="1867"/>
         </scene>
         <!--About me-->
         <scene sceneID="8SV-62-X7G">
@@ -963,24 +970,6 @@ Watching movies or YouTube videos</string>
             <point key="canvasLocation" x="451" y="332"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="GdS-Kg-1hk">
-            <objects>
-                <navigationController storyboardIdentifier="SkillsNav" automaticallyAdjustsScrollViewInsets="NO" id="r2t-1A-fbf" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LSE-Qo-e0r">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ZAT-Yl-cvg" kind="relationship" relationship="rootViewController" id="DeU-zx-vKF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L39-1o-96l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2598" y="-404"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="xu8-zg-11F">
             <objects>
                 <navigationController storyboardIdentifier="AchievementsNav" automaticallyAdjustsScrollViewInsets="NO" id="0qH-bm-BgF" sceneMemberID="viewController">
@@ -990,9 +979,6 @@ Watching movies or YouTube videos</string>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="sJl-fe-gPz" kind="relationship" relationship="rootViewController" id="2Ae-S4-ESH"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7a6-fB-kYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
