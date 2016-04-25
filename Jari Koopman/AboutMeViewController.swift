@@ -15,7 +15,7 @@ class AboutMeViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var hobbiesLabel: UILabel!
     
     let factGeneratorClass = factGenerator()
-    let imagesArray: [String] = ["Apple and tea", "Mac with hands", "Mac with me"]
+    let imagesArray: [String] = ["Apple with tea", "Mac with tea", "Mac and me"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
