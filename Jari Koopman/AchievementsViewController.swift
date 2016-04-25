@@ -23,37 +23,55 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
 
         //ScrollView setup
         
-        //1 
-        self.scrollView.frame = (CGRectMake(0, 0, self.view.frame.width, 300))
+        let imagesArray: [String] = ["swift-og","Facebook-48","app-about","swift-og"]
+        
+        self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, 300)
         let scrollViewWidth = self.scrollView.frame.width
         let scrollViewHeight = self.scrollView.frame.height
+        
+        var imageIndex: Int = 0
+        for _ in imagesArray {
+            let imageView = UIImageView(frame: (CGRectMake(scrollViewWidth*CGFloat(imageIndex), 0, scrollViewWidth, scrollViewHeight)))
+            imageView.contentMode = .ScaleAspectFit
+            imageView.image = UIImage(named: imagesArray[imageIndex])
+            self.scrollView.addSubview(imageView)
+            imageIndex = imageIndex+1
+        }
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*CGFloat(imagesArray.count), self.scrollView.frame.height)
+        self.scrollView.delegate = self
+
+        
+        //1 
+//        self.scrollView.frame = (CGRectMake(0, 0, self.view.frame.width, 300))
+//        let scrollViewWidth = self.scrollView.frame.width
+//        let scrollViewHeight = self.scrollView.frame.height
         //2
         textLabel.textAlignment = .Center
         textLabel.textColor = UIColor.blackColor()
         //3
-        let imgOne = UIImageView(frame: CGRectMake(0, 0, scrollViewWidth, scrollViewHeight))
-        imgOne.contentMode = .ScaleAspectFit
-        imgOne.image = UIImage(named: "swift-og")
-        let imgTwo = UIImageView(frame: CGRectMake(scrollViewWidth, 0, scrollViewWidth, scrollViewHeight))
-        imgTwo.contentMode = .ScaleAspectFit
-        imgTwo.image = UIImage(named: "swift-og")
-
-        let imgThree = UIImageView(frame: CGRectMake(scrollViewWidth*2, 0, scrollViewWidth, scrollViewHeight))
-        imgThree.contentMode = .ScaleAspectFit
-        imgThree.image = UIImage(named: "swift-og")
-
-        let imgFour = UIImageView(frame: CGRectMake(scrollViewWidth*3, 0, scrollViewWidth, scrollViewHeight))
-        imgFour.contentMode = .ScaleAspectFit
-        imgFour.image = UIImage(named: "swift-og")
-
-        
-        self.scrollView.addSubview(imgOne)
-        self.scrollView.addSubview(imgTwo)
-        self.scrollView.addSubview(imgThree)
-        self.scrollView.addSubview(imgFour)
-        //4
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*4, self.scrollView.frame.height)
-        self.scrollView.delegate = self
+//        let imgOne = UIImageView(frame: CGRectMake(0, 0, scrollViewWidth, scrollViewHeight))
+//        imgOne.contentMode = .ScaleAspectFit
+//        imgOne.image = UIImage(named: "swift-og")
+//        let imgTwo = UIImageView(frame: CGRectMake(scrollViewWidth, 0, scrollViewWidth, scrollViewHeight))
+//        imgTwo.contentMode = .ScaleAspectFit
+//        imgTwo.image = UIImage(named: "swift-og")
+//
+//        let imgThree = UIImageView(frame: CGRectMake(scrollViewWidth*2, 0, scrollViewWidth, scrollViewHeight))
+//        imgThree.contentMode = .ScaleAspectFit
+//        imgThree.image = UIImage(named: "swift-og")
+//
+//        let imgFour = UIImageView(frame: CGRectMake(scrollViewWidth*3, 0, scrollViewWidth, scrollViewHeight))
+//        imgFour.contentMode = .ScaleAspectFit
+//        imgFour.image = UIImage(named: "swift-og")
+//
+//        
+//        self.scrollView.addSubview(imgOne)
+//        self.scrollView.addSubview(imgTwo)
+//        self.scrollView.addSubview(imgThree)
+//        self.scrollView.addSubview(imgFour)
+//        //4
+//        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*4, self.scrollView.frame.height)
+//        self.scrollView.delegate = self
         self.pageControl.currentPage = 0
         // Do any additional setup after loading the view.
         scrollViewDidEndDecelerating(scrollView)

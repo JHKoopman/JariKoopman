@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="ErO-Ya-g94">
                                 <rect key="frame" x="140" y="214" width="321" height="172"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ErO-Ya-g94" secondAttribute="height" multiplier="15:8" id="ba4-b6-Sh9"/>
+                                    <constraint firstAttribute="width" secondItem="ErO-Ya-g94" secondAttribute="height" multiplier="15:8" constant="-1.5" id="ba4-b6-Sh9"/>
                                 </constraints>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
