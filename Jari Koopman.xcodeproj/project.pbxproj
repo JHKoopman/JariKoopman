@@ -26,6 +26,7 @@
 		0853433E1CC11D8000F16C55 /* ContactMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */; };
 		5792DBB81CC4C1DD0089D19B /* RandomFactGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792DBB71CC4C1DD0089D19B /* RandomFactGenerator.swift */; };
 		57B850791CCE02AA00833D95 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B850781CCE02AA00833D95 /* AchievementsViewController.swift */; };
+		57B8507B1CCE170900833D95 /* FamilyPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8507A1CCE170900833D95 /* FamilyPicturesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactMeViewController.swift; sourceTree = "<group>"; };
 		5792DBB71CC4C1DD0089D19B /* RandomFactGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomFactGenerator.swift; sourceTree = "<group>"; };
 		57B850781CCE02AA00833D95 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		57B8507A1CCE170900833D95 /* FamilyPicturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyPicturesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				085343391CC11D6E00F16C55 /* AboutMeViewController.swift */,
 				0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */,
 				57B850781CCE02AA00833D95 /* AchievementsViewController.swift */,
+				57B8507A1CCE170900833D95 /* FamilyPicturesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				0853433E1CC11D8000F16C55 /* ContactMeViewController.swift in Sources */,
 				5792DBB81CC4C1DD0089D19B /* RandomFactGenerator.swift in Sources */,
 				085342EB1CC114AF00F16C55 /* MainViewController.swift in Sources */,
+				57B8507B1CCE170900833D95 /* FamilyPicturesViewController.swift in Sources */,
 				085342E91CC114AF00F16C55 /* AppDelegate.swift in Sources */,
 				57B850791CCE02AA00833D95 /* AchievementsViewController.swift in Sources */,
 				0853433A1CC11D6E00F16C55 /* AboutMeViewController.swift in Sources */,

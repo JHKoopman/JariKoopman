@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -55,6 +56,59 @@
             </objects>
             <point key="canvasLocation" x="451" y="1089"/>
         </scene>
+        <!--Family Pictures View Controller-->
+        <scene sceneID="SEo-xz-uxZ">
+            <objects>
+                <viewController id="isc-Uc-Nff" customClass="FamilyPicturesViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ael-f6-ne1"/>
+                        <viewControllerLayoutGuide type="bottom" id="0bJ-g0-jUW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KDa-jF-ZA8">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWE-j1-MoW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iWE-j1-MoW" secondAttribute="trailing" id="QDK-Vb-fJQ"/>
+                            <constraint firstItem="iWE-j1-MoW" firstAttribute="leading" secondItem="KDa-jF-ZA8" secondAttribute="leading" id="WG6-DA-wuG"/>
+                            <constraint firstItem="iWE-j1-MoW" firstAttribute="top" secondItem="KDa-jF-ZA8" secondAttribute="top" id="aUy-tf-r0e"/>
+                            <constraint firstItem="0bJ-g0-jUW" firstAttribute="top" secondItem="iWE-j1-MoW" secondAttribute="bottom" id="igc-su-hCt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iWE-j1-MoW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QDK-Vb-fJQ"/>
+                                <exclude reference="WG6-DA-wuG"/>
+                                <exclude reference="aUy-tf-r0e"/>
+                                <exclude reference="igc-su-hCt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iWE-j1-MoW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QDK-Vb-fJQ"/>
+                                <include reference="WG6-DA-wuG"/>
+                                <include reference="aUy-tf-r0e"/>
+                                <include reference="igc-su-hCt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="iWE-j1-MoW" id="UfX-Q8-yv6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnS-Dm-ZIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="-1062"/>
+        </scene>
         <!--Family-->
         <scene sceneID="VKU-wY-WVs">
             <objects>
@@ -67,14 +121,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5E-Cg-YRM">
-                                <rect key="frame" x="272" y="297" width="49" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yek-jB-pTD">
+                                <rect key="frame" x="20" y="28" width="560" height="143"/>
+                                <string key="text">I'm a 14 year old boy and live with my mum, dad and 10 year old brother in the province Drenthe, a part of Holland with a lot of forest. In September my brother will satart at the same secundary school as I'm going to. Because my school is a long travel away from where we currently live we are planning on selling our house. Then my mum, dad, brother, me and our two cats will move to the province Overijssel so we are closer to my and my brother's school.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-sK-TA3">
+                                <rect key="frame" x="20" y="481" width="560" height="61"/>
+                                <string key="text">In my family we all enjoy working with computers, next to that we like to wander around in the forest close to our home or in the mountains when we're on holiday.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-RN-Nhx">
+                                <rect key="frame" x="223" y="550" width="155" height="30"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.57254901960000004" blue="0.28235294119999998" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="OOY-Zg-uO9"/>
+                                </constraints>
+                                <state key="normal" title="More family pictures"/>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="OOY-Zg-uO9"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="isc-Uc-Nff" kind="show" id="sRD-TC-Ryd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
+                                <rect key="frame" x="20" y="225" width="560" height="248"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yek-jB-pTD" firstAttribute="top" secondItem="Bqa-6E-cRn" secondAttribute="bottom" constant="8" id="360-st-XMf"/>
+                            <constraint firstItem="Rhh-8v-Mhe" firstAttribute="top" secondItem="kXF-RN-Nhx" secondAttribute="bottom" constant="20" id="6cB-Pp-s8d"/>
+                            <constraint firstItem="kXF-RN-Nhx" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="6fo-RF-Pru"/>
+                            <constraint firstItem="yek-jB-pTD" firstAttribute="leading" secondItem="qxI-kr-kVg" secondAttribute="leadingMargin" id="9wk-tQ-qux"/>
+                            <constraint firstItem="yek-jB-pTD" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="Bj4-lb-axn"/>
+                            <constraint firstItem="DuY-sK-TA3" firstAttribute="leading" secondItem="qxI-kr-kVg" secondAttribute="leading" constant="20" id="HzS-pK-lfi"/>
+                            <constraint firstItem="rRg-Jm-1o5" firstAttribute="leading" secondItem="qxI-kr-kVg" secondAttribute="leading" constant="20" id="Twh-y5-AXg"/>
+                            <constraint firstItem="DuY-sK-TA3" firstAttribute="top" secondItem="rRg-Jm-1o5" secondAttribute="bottom" constant="8" id="af6-hi-Ypx"/>
+                            <constraint firstItem="kXF-RN-Nhx" firstAttribute="top" secondItem="DuY-sK-TA3" secondAttribute="bottom" constant="8" id="bRF-P6-ZK0"/>
+                            <constraint firstItem="DuY-sK-TA3" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="g0i-wI-vmP"/>
+                            <constraint firstItem="rRg-Jm-1o5" firstAttribute="top" secondItem="yek-jB-pTD" secondAttribute="bottom" constant="54" id="jj1-S6-dx3"/>
+                            <constraint firstItem="rRg-Jm-1o5" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="rdO-4O-77H"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yek-jB-pTD"/>
+                                <include reference="DuY-sK-TA3"/>
+                                <include reference="kXF-RN-Nhx"/>
+                                <include reference="rRg-Jm-1o5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="360-st-XMf"/>
+                                <include reference="9wk-tQ-qux"/>
+                                <include reference="Bj4-lb-axn"/>
+                                <include reference="Twh-y5-AXg"/>
+                                <include reference="jj1-S6-dx3"/>
+                                <include reference="rdO-4O-77H"/>
+                                <include reference="HzS-pK-lfi"/>
+                                <include reference="af6-hi-Ypx"/>
+                                <include reference="g0i-wI-vmP"/>
+                                <include reference="6fo-RF-Pru"/>
+                                <include reference="bRF-P6-ZK0"/>
+                                <include reference="6cB-Pp-s8d"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xC0-OM-jVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -366,9 +483,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="308" width="360" height="239"/>
-                                </variation>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="awj-2m-HnU">
                                 <rect key="frame" x="273" y="555" width="55" height="37"/>
@@ -399,7 +513,9 @@
                             <constraint firstItem="bUn-Lu-KLJ" firstAttribute="top" secondItem="bzt-5y-A8u" secondAttribute="bottom" id="YWE-3H-VQf"/>
                             <constraint firstAttribute="trailing" secondItem="Fms-Mb-u3Q" secondAttribute="trailing" constant="20" id="b5h-Dd-tfd"/>
                             <constraint firstItem="bzt-5y-A8u" firstAttribute="leading" secondItem="eEY-V6-biZ" secondAttribute="leading" id="eNZ-8u-Km2"/>
-                            <constraint firstItem="Fms-Mb-u3Q" firstAttribute="top" secondItem="0RU-iz-US0" secondAttribute="bottom" constant="288" id="ucI-Db-R1z"/>
+                            <constraint firstItem="Fms-Mb-u3Q" firstAttribute="top" secondItem="0RU-iz-US0" secondAttribute="bottom" constant="288" id="ucI-Db-R1z">
+                                <variation key="widthClass=compact" constant="244"/>
+                            </constraint>
                         </constraints>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
@@ -867,7 +983,7 @@ Watching movies or YouTube videos</string>
         <!--Navigation Controller-->
         <scene sceneID="xu8-zg-11F">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0qH-bm-BgF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AchievementsNav" automaticallyAdjustsScrollViewInsets="NO" id="0qH-bm-BgF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qTB-SE-BXW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
