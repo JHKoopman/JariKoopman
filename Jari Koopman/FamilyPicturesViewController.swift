@@ -17,7 +17,7 @@ class FamilyPicturesViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.lightGrayColor()
         
         //ScrollView Setup
         
@@ -26,14 +26,12 @@ class FamilyPicturesViewController: UIViewController, UIScrollViewDelegate {
         let scrollViewHeight = self.scrollView.frame.height
         
         var imageIndex: Int = 0
-        var imagePlace: CGFloat = 0
         for _ in imagesArray {
-            let imageView = UIImageView(frame: (CGRectMake(scrollViewWidth*imagePlace, 0, scrollViewWidth, scrollViewHeight)))
+            let imageView = UIImageView(frame: (CGRectMake(scrollViewWidth*CGFloat(imageIndex), 0, scrollViewWidth, scrollViewHeight)))
             imageView.contentMode = .ScaleAspectFit
             imageView.image = UIImage(named: imagesArray[imageIndex])
             self.scrollView.addSubview(imageView)
             imageIndex = imageIndex+1
-            imagePlace = imagePlace+1
         }
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*CGFloat(imagesArray.count), self.scrollView.frame.height)
         self.scrollView.delegate = self
