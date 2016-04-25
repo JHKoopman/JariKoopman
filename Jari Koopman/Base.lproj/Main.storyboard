@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -42,19 +41,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-EU-KHc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-EU-KHc">
                                 <rect key="frame" x="244" y="289" width="77" height="21"/>
+                                <mutableString key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do a intership at an appbuilding business as long as my marks stay high enough. At my intership I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They have loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oBy-EU-KHc" firstAttribute="centerX" secondItem="rJx-Cl-ETd" secondAttribute="centerX" id="SQn-re-UbC"/>
+                            <constraint firstItem="oBy-EU-KHc" firstAttribute="top" secondItem="vcC-Ko-mh4" secondAttribute="bottom" id="ZjY-0I-bkK"/>
+                            <constraint firstItem="oBy-EU-KHc" firstAttribute="leading" secondItem="rJx-Cl-ETd" secondAttribute="leading" constant="20" id="rKr-Ge-mB3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SQn-re-UbC"/>
+                                <exclude reference="ZjY-0I-bkK"/>
+                                <exclude reference="rKr-Ge-mB3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="SQn-re-UbC"/>
+                                <include reference="ZjY-0I-bkK"/>
+                                <include reference="rKr-Ge-mB3"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkF-KF-aZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="451" y="1089"/>
+            <point key="canvasLocation" x="450" y="1089"/>
         </scene>
         <!--Family Pictures View Controller-->
         <scene sceneID="SEo-xz-uxZ">
@@ -65,6 +84,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0bJ-g0-jUW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KDa-jF-ZA8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWE-j1-MoW">
@@ -83,10 +103,10 @@
                                 <exclude reference="iWE-j1-MoW"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="igc-su-hCt"/>
                                 <exclude reference="QDK-Vb-fJQ"/>
                                 <exclude reference="WG6-DA-wuG"/>
                                 <exclude reference="aUy-tf-r0e"/>
-                                <exclude reference="igc-su-hCt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -94,10 +114,10 @@
                                 <include reference="iWE-j1-MoW"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="igc-su-hCt"/>
                                 <include reference="QDK-Vb-fJQ"/>
                                 <include reference="WG6-DA-wuG"/>
                                 <include reference="aUy-tf-r0e"/>
-                                <include reference="igc-su-hCt"/>
                             </mask>
                         </variation>
                     </view>
@@ -213,7 +233,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7s-i2-FG7">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sov-CI-p5p">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sov-CI-p5p">
                                 <rect key="frame" x="0.0" y="64" width="600" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="3tA-Y7-xc7"/>
@@ -353,19 +373,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WWDC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-Ni-zag">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-Ni-zag">
                                 <rect key="frame" x="265" y="289" width="56" height="21"/>
+                                <string key="text">One of my greatest wishes is to go to the USA for study, work or just for holiday. When I heard about the WWDC Scholarships I got very excited and asked my school permission to work on an app for the contest. A dream would come true if I got the opportunity to attend WWDC.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="centerX" secondItem="coo-aF-RKy" secondAttribute="centerX" id="KG1-gx-LT7"/>
+                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="top" secondItem="JED-Ir-fRa" secondAttribute="bottom" id="QWF-ZS-h1D"/>
+                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="leading" secondItem="coo-aF-RKy" secondAttribute="leadingMargin" id="jai-OD-vz5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KG1-gx-LT7"/>
+                                <exclude reference="QWF-ZS-h1D"/>
+                                <exclude reference="jai-OD-vz5"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="KG1-gx-LT7"/>
+                                <include reference="QWF-ZS-h1D"/>
+                                <include reference="jai-OD-vz5"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ2-W9-7yK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="451" y="-404"/>
+            <point key="canvasLocation" x="450" y="-404"/>
         </scene>
         <!--Contact Me-->
         <scene sceneID="LBv-qP-OiM">
@@ -479,7 +519,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-Mb-u3Q">
-                                <rect key="frame" x="20" y="352" width="560" height="195"/>
+                                <rect key="frame" x="20" y="308" width="560" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -538,10 +578,10 @@
                                 <include reference="KXO-7u-lOl"/>
                                 <include reference="b5h-Dd-tfd"/>
                                 <include reference="ucI-Db-R1z"/>
-                                <include reference="0Q7-vq-ElA"/>
-                                <include reference="3SQ-Yb-8qU"/>
                                 <include reference="3yl-Wy-XAs"/>
                                 <include reference="YWE-3H-VQf"/>
+                                <include reference="0Q7-vq-ElA"/>
+                                <include reference="3SQ-Yb-8qU"/>
                             </mask>
                         </variation>
                     </view>
@@ -766,27 +806,6 @@ Watching movies or YouTube videos</string>
                                     <action selector="anotherFactPressed" destination="OLc-b0-JtN" eventType="touchUpInside" id="gBZ-pb-Qe3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5H-GB-9c9">
-                                <rect key="frame" x="187" y="358" width="393" height="30"/>
-                                <color key="backgroundColor" red="0.90196078430000004" green="0.57254901960000004" blue="0.28235294119999998" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="OfF-0B-2pn"/>
-                                    <constraint firstAttribute="width" constant="160" id="lQU-ks-xRZ"/>
-                                </constraints>
-                                <state key="normal" title="My other interests"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="OfF-0B-2pn"/>
-                                        <exclude reference="lQU-ks-xRZ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="OfF-0B-2pn"/>
-                                        <include reference="lQU-ks-xRZ"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJd-ab-QKr">
                                 <rect key="frame" x="5" y="387" width="69" height="21"/>
                                 <constraints>
@@ -822,9 +841,6 @@ Watching movies or YouTube videos</string>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OQF-Mj-jTu" firstAttribute="top" secondItem="D5H-GB-9c9" secondAttribute="bottom" constant="28" id="1JP-rW-ZOM">
-                                <variation key="widthClass=compact" constant="3"/>
-                            </constraint>
                             <constraint firstItem="xfN-ga-vky" firstAttribute="top" secondItem="bBc-aL-JD5" secondAttribute="bottom" constant="8" id="1Lo-h9-QRB"/>
                             <constraint firstItem="OIh-hF-6gr" firstAttribute="top" secondItem="tNp-Aw-IKW" secondAttribute="bottom" constant="8" id="651-Z0-JBy"/>
                             <constraint firstItem="oqJ-aw-phJ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="JS6-gf-Goo" secondAttribute="trailing" constant="85" id="6HZ-ao-v03"/>
@@ -877,9 +893,6 @@ Watching movies or YouTube videos</string>
                                 <variation key="widthClass=compact" constant="32"/>
                             </constraint>
                             <constraint firstItem="lJd-ab-QKr" firstAttribute="top" secondItem="xfN-ga-vky" secondAttribute="bottom" constant="8" id="hP5-Qf-0x4"/>
-                            <constraint firstItem="D5H-GB-9c9" firstAttribute="leading" secondItem="lJd-ab-QKr" secondAttribute="trailing" constant="113" id="jvf-cF-ja0">
-                                <variation key="widthClass=compact" constant="8"/>
-                            </constraint>
                             <constraint firstItem="JS6-gf-Goo" firstAttribute="leading" secondItem="ejz-ub-bWf" secondAttribute="leadingMargin" constant="13" id="kjg-yY-Ytf"/>
                             <constraint firstItem="bBc-aL-JD5" firstAttribute="leading" secondItem="ejz-ub-bWf" secondAttribute="leading" constant="5" id="mrq-ZP-6wt">
                                 <variation key="widthClass=compact" constant="33"/>
@@ -890,7 +903,6 @@ Watching movies or YouTube videos</string>
                             <constraint firstItem="tNp-Aw-IKW" firstAttribute="leading" secondItem="ejz-ub-bWf" secondAttribute="leading" constant="5" id="v1e-Dx-6Gg">
                                 <variation key="widthClass=compact" constant="33"/>
                             </constraint>
-                            <constraint firstItem="D5H-GB-9c9" firstAttribute="trailing" secondItem="ejz-ub-bWf" secondAttribute="trailingMargin" id="vT4-EU-wbz"/>
                             <constraint firstItem="fdV-QM-Kc7" firstAttribute="top" secondItem="oqJ-aw-phJ" secondAttribute="bottom" constant="8" id="vc0-KO-MKk"/>
                             <constraint firstAttribute="trailing" secondItem="OIh-hF-6gr" secondAttribute="trailing" constant="5" id="wFx-4N-OrQ">
                                 <variation key="widthClass=compact" constant="32"/>
@@ -920,9 +932,6 @@ Watching movies or YouTube videos</string>
                                 <include reference="PeW-bq-my3"/>
                                 <include reference="I9i-Ap-drl"/>
                                 <include reference="hP5-Qf-0x4"/>
-                                <include reference="jvf-cF-ja0"/>
-                                <include reference="vT4-EU-wbz"/>
-                                <include reference="1JP-rW-ZOM"/>
                                 <include reference="8EX-Cw-kjx"/>
                                 <include reference="Iet-0U-kQX"/>
                                 <include reference="gPa-NW-Kwp"/>
