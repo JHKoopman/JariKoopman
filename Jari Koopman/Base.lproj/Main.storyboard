@@ -357,12 +357,81 @@
                     <view key="view" contentMode="scaleToFill" id="eEY-V6-biZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzt-5y-A8u">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-Mb-u3Q">
+                                <rect key="frame" x="20" y="352" width="560" height="195"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="308" width="360" height="239"/>
+                                </variation>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="awj-2m-HnU">
+                                <rect key="frame" x="273" y="555" width="55" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="2Ug-RF-Vad"/>
+                                    <constraint firstAttribute="width" constant="55" id="fei-vW-qFM"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="2Ug-RF-Vad"/>
+                                        <include reference="fei-vW-qFM"/>
+                                    </mask>
+                                </variation>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="awj-2m-HnU" firstAttribute="centerX" secondItem="eEY-V6-biZ" secondAttribute="centerX" id="0Q7-vq-ElA"/>
+                            <constraint firstItem="awj-2m-HnU" firstAttribute="top" secondItem="Fms-Mb-u3Q" secondAttribute="bottom" constant="8" id="3SQ-Yb-8qU"/>
+                            <constraint firstItem="bUn-Lu-KLJ" firstAttribute="top" secondItem="awj-2m-HnU" secondAttribute="bottom" constant="8" id="3yl-Wy-XAs"/>
+                            <constraint firstItem="bzt-5y-A8u" firstAttribute="top" secondItem="eEY-V6-biZ" secondAttribute="top" id="66y-U5-X03">
+                                <variation key="widthClass=compact" constant="64"/>
+                            </constraint>
+                            <constraint firstItem="bzt-5y-A8u" firstAttribute="centerX" secondItem="eEY-V6-biZ" secondAttribute="centerX" id="EwH-Ot-b6Z"/>
+                            <constraint firstAttribute="trailing" secondItem="bzt-5y-A8u" secondAttribute="trailing" id="HMt-zZ-uIS"/>
+                            <constraint firstItem="Fms-Mb-u3Q" firstAttribute="leading" secondItem="eEY-V6-biZ" secondAttribute="leading" constant="20" id="KXO-7u-lOl"/>
+                            <constraint firstItem="bUn-Lu-KLJ" firstAttribute="top" secondItem="bzt-5y-A8u" secondAttribute="bottom" id="YWE-3H-VQf"/>
+                            <constraint firstAttribute="trailing" secondItem="Fms-Mb-u3Q" secondAttribute="trailing" constant="20" id="b5h-Dd-tfd"/>
+                            <constraint firstItem="bzt-5y-A8u" firstAttribute="leading" secondItem="eEY-V6-biZ" secondAttribute="leading" id="eNZ-8u-Km2"/>
+                            <constraint firstItem="Fms-Mb-u3Q" firstAttribute="top" secondItem="0RU-iz-US0" secondAttribute="bottom" constant="288" id="ucI-Db-R1z"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bzt-5y-A8u"/>
+                                <include reference="Fms-Mb-u3Q"/>
+                                <include reference="awj-2m-HnU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="66y-U5-X03"/>
+                                <include reference="EwH-Ot-b6Z"/>
+                                <include reference="HMt-zZ-uIS"/>
+                                <include reference="eNZ-8u-Km2"/>
+                                <include reference="KXO-7u-lOl"/>
+                                <include reference="b5h-Dd-tfd"/>
+                                <include reference="ucI-Db-R1z"/>
+                                <include reference="0Q7-vq-ElA"/>
+                                <include reference="3SQ-Yb-8qU"/>
+                                <include reference="3yl-Wy-XAs"/>
+                                <include reference="YWE-3H-VQf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="J6i-Mz-Fh0"/>
+                    <connections>
+                        <outlet property="pageControl" destination="awj-2m-HnU" id="fX2-Ya-fVc"/>
+                        <outlet property="scrollView" destination="bzt-5y-A8u" id="q8q-Tp-DgW"/>
+                        <outlet property="textLabel" destination="Fms-Mb-u3Q" id="OwY-1u-D1K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1H-0z-DU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137" y="1867"/>
+            <point key="canvasLocation" x="1135" y="1867"/>
         </scene>
         <!--About me-->
         <scene sceneID="8SV-62-X7G">
@@ -794,6 +863,24 @@ Watching movies or YouTube videos</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L39-1o-96l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2598" y="-404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xu8-zg-11F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0qH-bm-BgF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qTB-SE-BXW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sJl-fe-gPz" kind="relationship" relationship="rootViewController" id="2Ae-S4-ESH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7a6-fB-kYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879" y="1867"/>
         </scene>
     </scenes>
     <resources>

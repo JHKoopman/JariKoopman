@@ -89,7 +89,7 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
         let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
         // Change the indicator
         self.pageControl.currentPage = Int(currentPage);
-        // Change the text accordingly
+        // Change rest of view
         
         switch (Int(currentPage)) {
         case 0:
