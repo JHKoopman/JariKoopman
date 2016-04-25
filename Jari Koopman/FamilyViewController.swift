@@ -12,9 +12,10 @@ class FamilyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(FamilyViewController.openSideMenu))
+        view.backgroundColor = UIColor.lightGrayColor()
 
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(FamilyViewController.openSideMenu))
+        self.title = "Family"
 
         // Do any additional setup after loading the view.
     }

@@ -18,6 +18,9 @@ class AboutMeViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.lightGrayColor()
+
+        self.title = "About me"
         funFactLabel.text = factGeneratorClass.anotherFactPressed(funFactLabel.text!)
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(AboutMeViewController.openSideMenu))
         hobbiesLabel.adjustsFontSizeToFitWidth = true

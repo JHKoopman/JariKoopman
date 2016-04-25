@@ -47,11 +47,14 @@ class MyMenuTableViewController: UITableViewController {
         var cell = tableView.dequeueReusableCellWithIdentifier("CELL")
         
         if (cell == nil) {
+            let blurEffect = UIBlurEffect(style: .Dark)
+            let vibrancyEffect = UIVibrancyEffect(forBlurEffect: blurEffect)
+            let vibrancyEffectView = UIVisualEffectView(effect: vibrancyEffect)
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
             cell!.backgroundColor = UIColor.clearColor()
-            cell!.textLabel?.textColor = UIColor.darkGrayColor()
+            cell!.textLabel?.textColor = UIColor.whiteColor()
             let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
-            selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
+            vibrancyEffectView.contentView.addSubview(selectedBackgroundView)
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         

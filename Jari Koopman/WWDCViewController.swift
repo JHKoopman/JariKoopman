@@ -12,8 +12,10 @@ class WWDCViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.lightGrayColor()
+
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(WWDCViewController.openSideMenu))
+        self.title = "WWDC"
 
 
         // Do any additional setup after loading the view.

@@ -1,6 +1,6 @@
 //
 //  ENSideMenuNavigationController.swift
-//  Hermitcraft_Mockup
+//  Jari Koopman
 //
 //  Created by Jari Koopman on 12/04/16.
 //  Copyright © 2016 JarICT. All rights reserved.

@@ -23,9 +23,9 @@
 		085343361CC11D5F00F16C55 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343351CC11D5F00F16C55 /* SkillsViewController.swift */; };
 		085343381CC11D6500F16C55 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343371CC11D6500F16C55 /* FamilyViewController.swift */; };
 		0853433A1CC11D6E00F16C55 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085343391CC11D6E00F16C55 /* AboutMeViewController.swift */; };
-		0853433C1CC11D7800F16C55 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */; };
 		0853433E1CC11D8000F16C55 /* ContactMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */; };
 		5792DBB81CC4C1DD0089D19B /* RandomFactGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792DBB71CC4C1DD0089D19B /* RandomFactGenerator.swift */; };
+		57B850791CCE02AA00833D95 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B850781CCE02AA00833D95 /* AchievementsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +68,9 @@
 		085343351CC11D5F00F16C55 /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		085343371CC11D6500F16C55 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
 		085343391CC11D6E00F16C55 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
-		0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactMeViewController.swift; sourceTree = "<group>"; };
 		5792DBB71CC4C1DD0089D19B /* RandomFactGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomFactGenerator.swift; sourceTree = "<group>"; };
+		57B850781CCE02AA00833D95 /* AchievementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +176,8 @@
 				085343351CC11D5F00F16C55 /* SkillsViewController.swift */,
 				085343371CC11D6500F16C55 /* FamilyViewController.swift */,
 				085343391CC11D6E00F16C55 /* AboutMeViewController.swift */,
-				0853433B1CC11D7800F16C55 /* AchievementsViewController.swift */,
 				0853433D1CC11D8000F16C55 /* ContactMeViewController.swift */,
+				57B850781CCE02AA00833D95 /* AchievementsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -324,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0853433C1CC11D7800F16C55 /* AchievementsViewController.swift in Sources */,
 				0853431A1CC1152200F16C55 /* ENSideMenuNavigationController.swift in Sources */,
 				0853431C1CC115CD00F16C55 /* MySideMenuTableViewController.swift in Sources */,
 				085343191CC1152200F16C55 /* ENSideMenu.swift in Sources */,
@@ -337,6 +336,7 @@
 				5792DBB81CC4C1DD0089D19B /* RandomFactGenerator.swift in Sources */,
 				085342EB1CC114AF00F16C55 /* MainViewController.swift in Sources */,
 				085342E91CC114AF00F16C55 /* AppDelegate.swift in Sources */,
+				57B850791CCE02AA00833D95 /* AchievementsViewController.swift in Sources */,
 				0853433A1CC11D6E00F16C55 /* AboutMeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +479,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Jari Koopman/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-Koopman";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,7 +492,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Jari Koopman/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.jarict.Jari-Koopman";
 				PRODUCT_NAME = "$(TARGET_NAME)";

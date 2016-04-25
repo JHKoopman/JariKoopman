@@ -12,9 +12,10 @@ class EducationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(EducationViewController.openSideMenu))
+        view.backgroundColor = UIColor.lightGrayColor()
 
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(EducationViewController.openSideMenu))
+        self.title = "Education"
 
         // Do any additional setup after loading the view.
     }

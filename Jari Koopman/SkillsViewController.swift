@@ -20,10 +20,12 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.lightGrayColor()
+
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(SkillsViewController.openSideMenu))
         
         imageView.contentMode = .ScaleAspectFit
+        self.title = "Skills"
         
         
         pageControl.currentPageIndicatorTintColor = UIColor.redColor()
@@ -35,18 +37,24 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
         let scrollViewHeight = self.scrollView.frame.height
         //2
         skillLevelLabel.textAlignment = .Center
+        skillLevelLabel.textColor = UIColor.whiteColor()
         titleLabel.textAlignment = .Center
+        titleLabel.textColor = UIColor.whiteColor()
         descriptionLabel.textAlignment = .Center
+        descriptionLabel.textColor = UIColor.whiteColor()
         //3
         let imgOne = UIImageView(frame: CGRectMake(0, 0, scrolLViewWidth, scrollViewHeight))
-        imgOne.contentMode = .ScaleToFill
-        imgOne.image = UIImage(named: "swift-og")
+        imgOne.contentMode = .Center
+        imgOne.image = UIImage(named: "Swift on mac")
         let imgTwo = UIImageView(frame: CGRectMake(scrolLViewWidth, 0, scrolLViewWidth, scrollViewHeight))
-        imgTwo.contentMode = .ScaleAspectFit
+        imgTwo.contentMode = .Center
+        imgTwo.image = UIImage(named: "Mac with Gear")
         let imgThree = UIImageView(frame: CGRectMake(scrolLViewWidth*2, 0, scrolLViewWidth, scrollViewHeight))
-        imgThree.contentMode = .ScaleAspectFit
+        imgThree.contentMode = .Center
+        imgThree.image = UIImage(named: "Mac with Gear")
         let imgFour = UIImageView(frame: CGRectMake(scrolLViewWidth*3, 0, scrolLViewWidth, scrollViewHeight))
-        imgFour.contentMode = .ScaleAspectFit
+        imgFour.contentMode = .Center
+        imgFour.image = UIImage(named: "Swift on mac")
         
         
         self.scrollView.addSubview(imgOne)
@@ -86,23 +94,23 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
         switch (Int(currentPage)) {
         case 0:
             imageView.image = UIImage(named: "swift-og")
-            titleLabel.text = "Title 1"
-            skillLevelLabel.text = "OVER 9000!!!!!!!!!!!"
+            titleLabel.text = "Swift"
+            skillLevelLabel.text = "Skill level: 80%"
             descriptionLabel.text = "Description 1"
         case 1:
             imageView.image = UIImage(named: "Python")
-            titleLabel.text = "Titel 2"
-            skillLevelLabel.text = "Not over 9000"
+            titleLabel.text = "Python"
+            skillLevelLabel.text = "Skill level: 55%"
             descriptionLabel.text = "Description 2"
         case 2:
-            imageView.image = UIImage(named: "menu")
-            titleLabel.text = "Title 3"
-            skillLevelLabel.text = "Below 9000"
+            imageView.image = UIImage(named: "sketch")
+            titleLabel.text = "Sketch"
+            skillLevelLabel.text = "Skill level: 10%"
             descriptionLabel.text = "Description 3"
         default:
-            imageView.image = UIImage(named: "app-about")
-            titleLabel.text = "Title 4"
-            skillLevelLabel.text = "some"
+            imageView.image = UIImage(named: "Flags")
+            titleLabel.text = "Other languages"
+            skillLevelLabel.text = "Skill level: 90%"
             descriptionLabel.text = "Description 4"
         }
 

@@ -13,6 +13,9 @@ class ContactMeViewController: UIViewController, MFMailComposeViewControllerDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.lightGrayColor()
+
+        self.title = "Contact me"
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ContactMeViewController.openSideMenu))
 

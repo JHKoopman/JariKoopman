@@ -12,9 +12,11 @@ class ViewController: UIViewController, ENSideMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.lightGrayColor()
+
         self.sideMenuController()?.sideMenu?.delegate = self
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ViewController.openSideMenu))
-        
+        self.title = "Jari Koopman"
         
         // Do any additional setup after loading the view, typically from a nib.
         

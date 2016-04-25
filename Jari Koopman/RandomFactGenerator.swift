@@ -20,7 +20,7 @@ class factGenerator {
     let factsArray: [String] = [
         "I've been to Australia 3 times, when I was 3, 8 and 10, and that's where I learned most of my English.",
         "I really like reading, when I was 11 I red the whole Harry Potter series in English.",
-        "I’ve got long hair, it will be made in to a wig for children with cancer.",
+        "I’ve got long hair, if I cut it off it will be made into a wig for children with cancer.",
         "I’ve got a good sense of humor, well I think I have, opinions are divided on that…",
         "My passion for Apple started when I was 10 years old when I watched my first live event.",
         "My programming passion started only a year ago, since then I’ve created 2 apps, one of which is available for download.",

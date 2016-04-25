@@ -14,7 +14,9 @@ class AchievementsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Things I've done"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(AchievementsViewController.openSideMenu))
+        view.backgroundColor = UIColor.lightGrayColor()
 
 
         // Do any additional setup after loading the view.
