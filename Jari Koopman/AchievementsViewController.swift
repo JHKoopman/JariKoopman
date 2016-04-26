@@ -14,6 +14,15 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var downloadButton: UIButton!
+    
+    let thingsArray: [String] = [
+        "Because we have got friends in Tasmania, Australia I've been there 3 times now. I learned a lot of English during our visits. Last time I was 11 years old and we also visited Melbourne and Sidney",
+        "Because I'm highly gifted and I've got a great passion for coding me and my parents decided to look for a school where I would have the opportunity to learn coding next to my school work. I'm very happy about my school switch although I've got to travel 3,5 hours a day to go there. I'm travling by bike and by train.",
+        "My aunt and uncle hava a camping in Germany, for me a great opportunity and a nice challenge to make my first app with sightseeing tips for their visitors.",
+        "For sports I ride a lot on my bike and every week I train Pencak Silat, an Indonesian martial art. At home I like to play with a ball or on our trampoline. Besides this I also really like climbing, especially in a forest climbing park."
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +31,8 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
         view.backgroundColor = UIColor.lightGrayColor()
 
         //ScrollView setup
+        downloadButton.hidden = true
+        textLabel.adjustsFontSizeToFitWidth = true
         
         let imagesArray: [String] = ["swift-og","Facebook-48","app-about","swift-og"]
         
@@ -53,6 +64,10 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
     func openSideMenu() {
         toggleSideMenuView()
     }
+    @IBAction func pressedDownloadButton() {
+        let url:NSURL = NSURL(string: "https://itunes.apple.com/us/app/camping-elbeling/id1071046354?ls=1&mt=8")!
+        UIApplication.sharedApplication().openURL(url)
+    }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         //Test the offset and calculate the current page after scrolling ends
@@ -64,13 +79,20 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
         
         switch (Int(currentPage)) {
         case 0:
-            textLabel.text = "page 1"
+            textLabel.text = thingsArray[Int(currentPage)]
+            downloadButton.hidden = true
+
         case 1:
-            textLabel.text = "page 2"
+            textLabel.text = thingsArray[Int(currentPage)]
+            downloadButton.hidden = true
+
         case 2:
-            textLabel.text = "page 3"
+            textLabel.text = thingsArray[Int(currentPage)]
+            downloadButton.hidden = false
         default:
-            textLabel.text = "page 4"
+            textLabel.text = thingsArray[Int(currentPage)]
+            downloadButton.hidden = true
+
         }
     }
 }

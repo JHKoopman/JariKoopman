@@ -17,6 +17,13 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    let skillsArray: [String] = [
+        "I learned Swift in online courses at Teamtreehouse. I'm currently pretty much up to date with Swift at basic and intermediate level. I am stil working on expanding my knowledge about Swift by taking more courses and I learn more every day at my internship.",
+        "Python is the first programming language I ever touched, it was at my first secundary school where we did an ICT project where we learned Python. That started my love for programming and because I already was an Apple addict I started with developing apps.",
+        "I only started using Sketch a few weeks ago, I was searching for a design program for my apps that works easy and was not to expensive, I first looked at Adobe but I can't afford such programs at this point in time.",
+        "Next to some programming languages I speak (almost) flawles English and flawles Dutch. I learned most of my English on our trips to Australia and Tasmania. I also have an Anglia degree at advanced level whitch is CEFR level B2."
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +34,7 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
         imageView.contentMode = .ScaleAspectFit
         self.title = "Skills"
         
+        descriptionLabel.adjustsFontSizeToFitWidth = true
         
         pageControl.currentPageIndicatorTintColor = UIColor.redColor()
         //ScrollView Setup
@@ -96,22 +104,22 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
             imageView.image = UIImage(named: "swift-og")
             titleLabel.text = "Swift"
             skillLevelLabel.text = "Skill level: 80%"
-            descriptionLabel.text = "Description 1"
+            descriptionLabel.text = skillsArray[Int(currentPage)]
         case 1:
             imageView.image = UIImage(named: "Python")
             titleLabel.text = "Python"
             skillLevelLabel.text = "Skill level: 55%"
-            descriptionLabel.text = "Description 2"
+            descriptionLabel.text = skillsArray[Int(currentPage)]
         case 2:
             imageView.image = UIImage(named: "sketch")
             titleLabel.text = "Sketch"
             skillLevelLabel.text = "Skill level: 10%"
-            descriptionLabel.text = "Description 3"
+            descriptionLabel.text = skillsArray[Int(currentPage)]
         default:
             imageView.image = UIImage(named: "Flags")
-            titleLabel.text = "Other languages"
+            titleLabel.text = "Languages"
             skillLevelLabel.text = "Skill level: 90%"
-            descriptionLabel.text = "Description 4"
+            descriptionLabel.text = skillsArray[Int(currentPage)]
         }
 
     }

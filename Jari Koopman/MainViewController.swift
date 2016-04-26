@@ -22,7 +22,6 @@ class ViewController: UIViewController, ENSideMenuDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.lightGrayColor()
-        print(firstTimeLaunch)
         hiLabel.hidden = true
         youThereLabel.alpha = 0.0
         welcomeLabel.alpha = 0.0
@@ -35,11 +34,13 @@ class ViewController: UIViewController, ENSideMenuDelegate {
             setupView()
             firstTimeLaunch = false
         } else {
-            
+            navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ViewController.openSideMenu))
+            self.title = "Jari Koopman"
+            welcomeLabel.text = "Back again? If you're ready exploring you can quit the app, if not click the button at the top left corner or the button below!"
+            welcomeLabel.alpha = 1.0
+            learnMoreButton.setTitle("Resume exploring!", forState: .Normal)
+            learnMoreButton.alpha = 1.0
         }
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
     }
     
     func setupView() {
@@ -50,7 +51,7 @@ class ViewController: UIViewController, ENSideMenuDelegate {
         UIView.animateWithDuration(5.0, delay: 5.0, options: .OverrideInheritedOptions, animations: {
             self.welcomeLabel.alpha = 1.0
             }, completion: nil)
-        UIView.animateWithDuration(5.0, delay: 13.0, options: .AllowUserInteraction, animations: {
+        UIView.animateWithDuration(5.0, delay: 11.0, options: .AllowUserInteraction, animations: {
             self.learnMoreButton.alpha = 1.0
             }, completion: nil)
     }
