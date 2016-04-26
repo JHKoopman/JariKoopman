@@ -59,10 +59,10 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
         imgTwo.image = UIImage(named: "Mac with Gear")
         let imgThree = UIImageView(frame: CGRectMake(scrolLViewWidth*2, 0, scrolLViewWidth, scrollViewHeight))
         imgThree.contentMode = .ScaleAspectFit
-        imgThree.image = UIImage(named: "Mac with Gear")
+        imgThree.image = UIImage(named: "Swift on mac")
         let imgFour = UIImageView(frame: CGRectMake(scrolLViewWidth*3, 0, scrolLViewWidth, scrollViewHeight))
         imgFour.contentMode = .ScaleAspectFit
-        imgFour.image = UIImage(named: "Swift on mac")
+        imgFour.image = UIImage(named: "Mac with Gear")
         
         
         self.scrollView.addSubview(imgOne)
@@ -74,15 +74,10 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.delegate = self
         self.pageControl.currentPage = 0
         scrollViewDidEndDecelerating(scrollView)
-        
-        
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func openSideMenu() {

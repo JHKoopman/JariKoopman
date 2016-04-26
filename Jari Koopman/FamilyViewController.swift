@@ -16,13 +16,10 @@ class FamilyViewController: UIViewController {
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(FamilyViewController.openSideMenu))
         self.title = "Family"
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func openSideMenu() {

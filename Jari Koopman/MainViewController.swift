@@ -34,13 +34,18 @@ class ViewController: UIViewController, ENSideMenuDelegate {
             setupView()
             firstTimeLaunch = false
         } else {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ViewController.openSideMenu))
-            self.title = "Jari Koopman"
-            welcomeLabel.text = "Back again? If you're ready exploring you can quit the app, if not click the button at the top left corner or the button below!"
-            welcomeLabel.alpha = 1.0
-            learnMoreButton.setTitle("Resume exploring!", forState: .Normal)
-            learnMoreButton.alpha = 1.0
+            secondLoadOfView()
         }
+    }
+    
+    func secondLoadOfView() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(ViewController.openSideMenu))
+        self.title = "Jari Koopman"
+        welcomeLabel.text = "Back again? If you're ready exploring you can quit the app, if not click the button at the top left corner or the button below!"
+        welcomeLabel.alpha = 1.0
+        learnMoreButton.setTitle("Resume exploring!", forState: .Normal)
+        learnMoreButton.alpha = 1.0
+
     }
     
     func setupView() {
@@ -59,7 +64,6 @@ class ViewController: UIViewController, ENSideMenuDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     @IBAction func pressedLearnMoreButton() {
         toggleSideMenuView()
