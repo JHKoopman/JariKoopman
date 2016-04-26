@@ -13,6 +13,7 @@ class AboutMeViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var funFactLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var hobbiesLabel: UILabel!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     let factGeneratorClass = factGenerator()
     let imagesArray: [String] = ["Apple with tea", "Mac with tea", "Mac and me"]
@@ -26,10 +27,11 @@ class AboutMeViewController: UIViewController, UIScrollViewDelegate {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(AboutMeViewController.openSideMenu))
         hobbiesLabel.adjustsFontSizeToFitWidth = true
         funFactLabel.adjustsFontSizeToFitWidth = true
+        pageControl.numberOfPages = imagesArray.count
+        pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
         
         //ScrollView Setup
-        
-        self.scrollView.frame = CGRectMake(0, 0, 343, 150)
+        self.scrollView.frame = CGRectMake(0, 0, 343, self.scrollView.frame.height)
         let scrollViewWidth = self.scrollView.frame.width
         let scrollViewHeight = self.scrollView.frame.height
         
@@ -43,6 +45,7 @@ class AboutMeViewController: UIViewController, UIScrollViewDelegate {
         }
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*CGFloat(imagesArray.count), self.scrollView.frame.height)
         self.scrollView.delegate = self
+        pageControl.currentPage = 0
         
     }
 
@@ -56,6 +59,11 @@ class AboutMeViewController: UIViewController, UIScrollViewDelegate {
 
     @IBAction func anotherFactPressed() {
         funFactLabel.text = factGeneratorClass.anotherFactPressed(funFactLabel.text!)
+    }
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        let pageWidth:CGFloat = CGRectGetWidth(scrollView.frame)
+        let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
+        self.pageControl.currentPage = Int(currentPage)
     }
     
 }

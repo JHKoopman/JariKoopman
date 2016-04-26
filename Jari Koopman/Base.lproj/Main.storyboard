@@ -55,7 +55,7 @@
                                     <action selector="pressedLearnMoreButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPv-Cj-ALA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeah! You there!  With your iPhone using this app!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkk-ao-IBd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeah! You there!  With your iPhone using my app!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkk-ao-IBd">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -183,41 +183,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="K7y-N3-6AL">
+                                <rect key="frame" x="281" y="555" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWE-j1-MoW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0bJ-g0-jUW" firstAttribute="top" secondItem="K7y-N3-6AL" secondAttribute="bottom" constant="8" id="Abv-uu-StS"/>
                             <constraint firstAttribute="trailing" secondItem="iWE-j1-MoW" secondAttribute="trailing" id="QDK-Vb-fJQ"/>
                             <constraint firstItem="iWE-j1-MoW" firstAttribute="leading" secondItem="KDa-jF-ZA8" secondAttribute="leading" id="WG6-DA-wuG"/>
                             <constraint firstItem="iWE-j1-MoW" firstAttribute="top" secondItem="KDa-jF-ZA8" secondAttribute="top" id="aUy-tf-r0e"/>
+                            <constraint firstItem="K7y-N3-6AL" firstAttribute="centerX" secondItem="KDa-jF-ZA8" secondAttribute="centerX" id="iYF-dZ-n5V"/>
                             <constraint firstItem="0bJ-g0-jUW" firstAttribute="top" secondItem="iWE-j1-MoW" secondAttribute="bottom" id="igc-su-hCt"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="iWE-j1-MoW"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="igc-su-hCt"/>
-                                <exclude reference="QDK-Vb-fJQ"/>
-                                <exclude reference="WG6-DA-wuG"/>
-                                <exclude reference="aUy-tf-r0e"/>
-                            </mask>
-                        </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="K7y-N3-6AL"/>
                                 <include reference="iWE-j1-MoW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="igc-su-hCt"/>
                                 <include reference="QDK-Vb-fJQ"/>
                                 <include reference="WG6-DA-wuG"/>
                                 <include reference="aUy-tf-r0e"/>
+                                <include reference="iYF-dZ-n5V"/>
+                                <include reference="Abv-uu-StS"/>
+                                <include reference="igc-su-hCt"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="pageControl" destination="K7y-N3-6AL" id="smc-J1-ru6"/>
                         <outlet property="scrollView" destination="iWE-j1-MoW" id="UfX-Q8-yv6"/>
                     </connections>
                 </viewController>
@@ -251,13 +250,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
+                                <rect key="frame" x="20" y="179" width="560" height="294"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-RN-Nhx">
                                 <rect key="frame" x="223" y="550" width="155" height="30"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.57254901960000004" blue="0.28235294119999998" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="OOY-Zg-uO9"/>
                                 </constraints>
-                                <state key="normal" title="More family pictures"/>
+                                <state key="normal" title="More family photos"/>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="OOY-Zg-uO9"/>
@@ -267,9 +269,6 @@
                                     <segue destination="isc-Uc-Nff" kind="show" id="sRD-TC-Ryd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
-                                <rect key="frame" x="20" y="179" width="560" height="294"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -290,8 +289,8 @@
                             <mask key="subviews">
                                 <include reference="yek-jB-pTD"/>
                                 <include reference="DuY-sK-TA3"/>
-                                <include reference="kXF-RN-Nhx"/>
                                 <include reference="rRg-Jm-1o5"/>
+                                <include reference="kXF-RN-Nhx"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="360-st-XMf"/>
@@ -958,6 +957,10 @@ Watching movies or YouTube videos</string>
                                     </mask>
                                 </variation>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-Uv-vFn">
+                                <rect key="frame" x="281" y="168" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1019,6 +1022,8 @@ Watching movies or YouTube videos</string>
                             </constraint>
                             <constraint firstItem="fdV-QM-Kc7" firstAttribute="top" secondItem="JS6-gf-Goo" secondAttribute="bottom" constant="17" id="pFy-H2-C0u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fdV-QM-Kc7" secondAttribute="trailing" constant="12" id="pdr-Dt-IZH"/>
+                            <constraint firstItem="4ef-Uv-vFn" firstAttribute="bottom" secondItem="83z-QL-WQA" secondAttribute="bottom" id="sAb-Wt-icB"/>
+                            <constraint firstItem="4ef-Uv-vFn" firstAttribute="centerX" secondItem="ejz-ub-bWf" secondAttribute="centerX" id="scZ-ZL-YN3"/>
                             <constraint firstItem="83z-QL-WQA" firstAttribute="centerX" secondItem="ejz-ub-bWf" secondAttribute="centerX" id="uHg-L7-rYP"/>
                             <constraint firstItem="tNp-Aw-IKW" firstAttribute="leading" secondItem="ejz-ub-bWf" secondAttribute="leading" constant="5" id="v1e-Dx-6Gg">
                                 <variation key="widthClass=compact" constant="33"/>
@@ -1029,6 +1034,9 @@ Watching movies or YouTube videos</string>
                             </constraint>
                         </constraints>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4ef-Uv-vFn"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="Xnw-HM-SqO"/>
                                 <include reference="uHg-L7-rYP"/>
@@ -1038,6 +1046,8 @@ Watching movies or YouTube videos</string>
                                 <include reference="9wS-gz-EZ6"/>
                                 <include reference="Jye-m0-c4N"/>
                                 <include reference="UbK-iM-ld5"/>
+                                <include reference="sAb-Wt-icB"/>
+                                <include reference="scZ-ZL-YN3"/>
                                 <include reference="DYc-8j-l40"/>
                                 <include reference="KHf-yP-dFS"/>
                                 <include reference="v1e-Dx-6Gg"/>
@@ -1073,6 +1083,7 @@ Watching movies or YouTube videos</string>
                     <connections>
                         <outlet property="funFactLabel" destination="fdV-QM-Kc7" id="FN8-m6-V6P"/>
                         <outlet property="hobbiesLabel" destination="OQF-Mj-jTu" id="JSo-xc-xXG"/>
+                        <outlet property="pageControl" destination="4ef-Uv-vFn" id="idW-pP-Tdk"/>
                         <outlet property="scrollView" destination="83z-QL-WQA" id="iof-BW-ydP"/>
                     </connections>
                 </viewController>

@@ -12,6 +12,7 @@ class FamilyPicturesViewController: UIViewController, UIScrollViewDelegate {
     
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     let imagesArray: [String] = ["Face","Micka 1","Micka 2"]
 
@@ -19,6 +20,8 @@ class FamilyPicturesViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         view.backgroundColor = UIColor.lightGrayColor()
         self.title = "Family photos"
+        pageControl.numberOfPages = imagesArray.count
+        pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
         //ScrollView Setup
         
         self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
@@ -35,9 +38,16 @@ class FamilyPicturesViewController: UIViewController, UIScrollViewDelegate {
         }
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*CGFloat(imagesArray.count), self.scrollView.frame.height)
         self.scrollView.delegate = self
+        pageControl.currentPage = 0
 
     }
 
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        let pageWidth: CGFloat = CGRectGetWidth(scrollView.frame)
+        let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
+        self.pageControl.currentPage = Int(currentPage)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
