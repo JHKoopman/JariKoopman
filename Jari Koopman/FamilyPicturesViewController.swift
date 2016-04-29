@@ -14,7 +14,7 @@ class FamilyPicturesViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    let imagesArray: [String] = ["Face","Micka 1","Micka 2"]
+    let imagesArray: [String] = ["Face","Micka 1","Micka 2","Brother","Kano","Segway"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

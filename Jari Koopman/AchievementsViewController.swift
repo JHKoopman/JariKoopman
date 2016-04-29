@@ -18,9 +18,9 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
     
     let thingsArray: [String] = [
         "Because we have got friends in Tasmania, Australia I've been there 3 times now. I learned a lot of English during our visits. Last time I was 11 years old and we also visited Melbourne and Sidney",
-        "Because I'm highly gifted and I've got a great passion for coding me and my parents decided to look for a school where I would have the opportunity to learn coding next to my school work. I'm very happy about my school switch although I've got to travel 3,5 hours a day to go there. I'm travling by bike and by train.",
-        "My aunt and uncle hava a camping in Germany, for me a great opportunity and a nice challenge to make my first app with sightseeing tips for their visitors.",
-        "For sports I ride a lot on my bike and every week I train Pencak Silat, an Indonesian martial art. At home I like to play with a ball or on our trampoline. Besides this I also really like climbing, especially in a forest climbing park."
+        "Because I'm highly gifted and I've got a great passion for coding my parents and me decided to look for a school where I would have the opportunity to learn coding next to my school work. I'm very happy about my school switch although I've got to travel 3,5 hours a day to go there. I'm travling by bike and by train.",
+        "My aunt and uncle have a camping in Germany, for me a great opportunity and a nice challenge to make my first app with sightseeing tips for their visitors.",
+        "For sports I ride a lot on my bike and every week I train Pencak Silat, an Indonesian martial art. At home I like to play on our trampoline or with a ball. Besides this I also really like climbing, especially in a forest climbing park."
     ]
     
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class AchievementsViewController: UIViewController, UIScrollViewDelegate {
         downloadButton.hidden = true
         textLabel.adjustsFontSizeToFitWidth = true
         
-        let imagesArray: [String] = ["swift-og","Facebook-48","app-about","swift-og"]
+        let imagesArray: [String] = ["AussieKangaroo","AppInStore","AppLogo","Climbing"]
         
         self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, 300)
         let scrollViewWidth = self.scrollView.frame.width

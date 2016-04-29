@@ -22,13 +22,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O3-cy-cKs">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!  I'm Jar-I the viritual version of Jari, my maker.  In this app you can learn about my real me. Just click around!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eI-bf-O44">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!  I'm Jar-I the viritual version of Jari, my maker.  In this app you can learn about my real me.  Just click around!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eI-bf-O44">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20s-k9-ObY">
@@ -58,7 +58,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeah! You there!  With your iPhone using my app!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkk-ao-IBd">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -143,26 +143,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-EU-KHc">
-                                <rect key="frame" x="20" y="20" width="560" height="264"/>
-                                <string key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do a intership at an appbuilding business as long as my marks stay high enough. At my intership I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They have loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</string>
+                                <rect key="frame" x="20" y="219" width="560" height="162.5"/>
+                                <mutableString key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do a internship at an appbuilding business as long as my marks stay high enough. At my internship I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They've got loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Education" translatesAutoresizingMaskIntoConstraints="NO" id="Xp5-0u-deu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VEF-pT-xBD" firstAttribute="top" relation="lessThanOrEqual" secondItem="oBy-EU-KHc" secondAttribute="bottom" constant="316" id="Egw-J1-sEH"/>
+                            <constraint firstItem="VEF-pT-xBD" firstAttribute="top" secondItem="oBy-EU-KHc" secondAttribute="bottom" constant="20" id="9tF-4Y-Vzs"/>
+                            <constraint firstItem="oBy-EU-KHc" firstAttribute="centerY" secondItem="rJx-Cl-ETd" secondAttribute="centerY" id="CHi-8U-jZx"/>
                             <constraint firstItem="oBy-EU-KHc" firstAttribute="centerX" secondItem="rJx-Cl-ETd" secondAttribute="centerX" id="SQn-re-UbC"/>
-                            <constraint firstItem="oBy-EU-KHc" firstAttribute="top" secondItem="vcC-Ko-mh4" secondAttribute="bottom" id="ZjY-0I-bkK"/>
-                            <constraint firstItem="oBy-EU-KHc" firstAttribute="leading" secondItem="rJx-Cl-ETd" secondAttribute="leading" constant="20" id="rKr-Ge-mB3"/>
+                            <constraint firstItem="Xp5-0u-deu" firstAttribute="leading" secondItem="rJx-Cl-ETd" secondAttribute="leadingMargin" id="ZMG-8Y-5o8"/>
+                            <constraint firstItem="Xp5-0u-deu" firstAttribute="centerX" secondItem="rJx-Cl-ETd" secondAttribute="centerX" id="eBM-DQ-0t5"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oBy-EU-KHc" secondAttribute="leading" id="fUe-DJ-SiA"/>
+                            <constraint firstItem="Xp5-0u-deu" firstAttribute="top" secondItem="vcC-Ko-mh4" secondAttribute="bottom" id="ldr-lO-SIf"/>
+                            <constraint firstItem="oBy-EU-KHc" firstAttribute="top" secondItem="Xp5-0u-deu" secondAttribute="bottom" constant="8" id="nVL-t4-sMg"/>
                         </constraints>
-                        <variation key="widthClass=compact">
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Xp5-0u-deu"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="ZMG-8Y-5o8"/>
+                                <exclude reference="eBM-DQ-0t5"/>
+                                <exclude reference="ldr-lO-SIf"/>
+                                <exclude reference="nVL-t4-sMg"/>
+                                <exclude reference="9tF-4Y-Vzs"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Xp5-0u-deu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ZMG-8Y-5o8"/>
+                                <include reference="eBM-DQ-0t5"/>
+                                <include reference="ldr-lO-SIf"/>
+                                <exclude reference="CHi-8U-jZx"/>
                                 <include reference="SQn-re-UbC"/>
-                                <include reference="ZjY-0I-bkK"/>
-                                <include reference="rKr-Ge-mB3"/>
-                                <include reference="Egw-J1-sEH"/>
+                                <include reference="fUe-DJ-SiA"/>
+                                <include reference="nVL-t4-sMg"/>
+                                <include reference="9tF-4Y-Vzs"/>
                             </mask>
                         </variation>
                     </view>
@@ -209,9 +235,9 @@
                                 <include reference="QDK-Vb-fJQ"/>
                                 <include reference="WG6-DA-wuG"/>
                                 <include reference="aUy-tf-r0e"/>
-                                <include reference="iYF-dZ-n5V"/>
                                 <include reference="Abv-uu-StS"/>
                                 <include reference="igc-su-hCt"/>
+                                <include reference="iYF-dZ-n5V"/>
                             </mask>
                         </variation>
                     </view>
@@ -243,17 +269,17 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-sK-TA3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-sK-TA3">
                                 <rect key="frame" x="20" y="481" width="560" height="61"/>
                                 <string key="text">In my family we all enjoy working with computers, next to that we like to wander around in the forest close to our home or in the mountains when we're on holiday.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
                                 <rect key="frame" x="20" y="179" width="560" height="294"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-RN-Nhx">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-RN-Nhx">
                                 <rect key="frame" x="223" y="550" width="155" height="30"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.57254901960000004" blue="0.28235294119999998" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -469,26 +495,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-Ni-zag">
-                                <rect key="frame" x="20" y="20" width="560" height="142.5"/>
+                                <rect key="frame" x="20" y="259.5" width="560" height="81.5"/>
                                 <string key="text">One of my greatest wishes is to go to the USA for study, work or just for holiday. When I heard about the WWDC Scholarships I got very excited and asked my school permission to work on an app for the contest. A dream would come true if I got the opportunity to attend WWDC.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WWDC" translatesAutoresizingMaskIntoConstraints="NO" id="8HC-fC-GR1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="amH-8j-zai" firstAttribute="top" relation="lessThanOrEqual" secondItem="eUZ-Ni-zag" secondAttribute="bottom" constant="437.5" id="1jf-PB-Epc"/>
-                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="centerX" secondItem="coo-aF-RKy" secondAttribute="centerX" id="KG1-gx-LT7"/>
-                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="top" secondItem="JED-Ir-fRa" secondAttribute="bottom" id="QWF-ZS-h1D"/>
-                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="leading" secondItem="coo-aF-RKy" secondAttribute="leadingMargin" id="jai-OD-vz5"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8HC-fC-GR1" secondAttribute="leading" id="8RZ-3Q-VGS"/>
+                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="centerX" secondItem="coo-aF-RKy" secondAttribute="centerX" id="90J-6x-M9N"/>
+                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="centerY" secondItem="coo-aF-RKy" secondAttribute="centerY" id="eo5-KC-erF"/>
+                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="leading" secondItem="coo-aF-RKy" secondAttribute="leadingMargin" id="g64-wk-l50"/>
+                            <constraint firstItem="eUZ-Ni-zag" firstAttribute="top" secondItem="8HC-fC-GR1" secondAttribute="bottom" constant="8.5" id="qNq-ju-JHg"/>
+                            <constraint firstItem="8HC-fC-GR1" firstAttribute="top" secondItem="JED-Ir-fRa" secondAttribute="bottom" constant="72" id="ujB-dF-I0S"/>
+                            <constraint firstItem="8HC-fC-GR1" firstAttribute="centerX" secondItem="coo-aF-RKy" secondAttribute="centerX" id="xHU-hz-Bk1"/>
                         </constraints>
-                        <variation key="widthClass=compact">
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8HC-fC-GR1"/>
+                            </mask>
                             <mask key="constraints">
-                                <include reference="KG1-gx-LT7"/>
-                                <include reference="QWF-ZS-h1D"/>
-                                <include reference="jai-OD-vz5"/>
-                                <include reference="1jf-PB-Epc"/>
+                                <exclude reference="8RZ-3Q-VGS"/>
+                                <exclude reference="ujB-dF-I0S"/>
+                                <exclude reference="xHU-hz-Bk1"/>
+                                <exclude reference="90J-6x-M9N"/>
+                                <exclude reference="eo5-KC-erF"/>
+                                <exclude reference="g64-wk-l50"/>
+                                <exclude reference="qNq-ju-JHg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8HC-fC-GR1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8RZ-3Q-VGS"/>
+                                <include reference="ujB-dF-I0S"/>
+                                <include reference="xHU-hz-Bk1"/>
+                                <include reference="90J-6x-M9N"/>
+                                <include reference="eo5-KC-erF"/>
+                                <include reference="g64-wk-l50"/>
+                                <include reference="qNq-ju-JHg"/>
                             </mask>
                         </variation>
                     </view>
@@ -515,19 +567,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can send me a mail at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-od-4r9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can send me an email at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-od-4r9">
                                 <rect key="frame" x="198" y="72" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-OB-ewU">
-                                <rect key="frame" x="210" y="264" width="36" height="29"/>
-                                <state key="normal" image="Twitter-48"/>
-                                <connections>
-                                    <action selector="twitterPressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="OhE-za-Dim"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAd-Em-uzc">
                                 <rect key="frame" x="244" y="168" width="113" height="30"/>
                                 <state key="normal" title="+31 591 362764"/>
@@ -549,10 +594,19 @@
                                     <action selector="mailPressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="eDz-6s-P2h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-OB-ewU">
+                                <rect key="frame" x="210" y="264" width="36" height="29"/>
+                                <state key="normal" image="Twitter-48"/>
+                                <connections>
+                                    <action selector="twitterPressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="OhE-za-Dim"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="108" id="0WQ-Qf-vOz"/>
+                            <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="108" id="0WQ-Qf-vOz">
+                                <variation key="widthClass=compact" constant="155"/>
+                            </constraint>
                             <constraint firstItem="GLY-mZ-zga" firstAttribute="top" secondItem="Qth-OB-ewU" secondAttribute="bottom" constant="307" id="AS4-PS-DeK"/>
                             <constraint firstItem="zAd-Em-uzc" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="C65-0h-6rw"/>
                             <constraint firstItem="GLY-mZ-zga" firstAttribute="top" secondItem="Gn9-Qx-xor" secondAttribute="bottom" constant="307" id="CCf-CA-jPh"/>
@@ -560,11 +614,15 @@
                             <constraint firstItem="LZb-od-4r9" firstAttribute="top" secondItem="LHq-gU-FkT" secondAttribute="bottom" constant="8" id="Qe4-0l-Wmp"/>
                             <constraint firstItem="zAd-Em-uzc" firstAttribute="top" secondItem="cDC-f6-Okm" secondAttribute="bottom" constant="8" id="ZH1-oQ-nXe"/>
                             <constraint firstItem="cDC-f6-Okm" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="bHI-L1-TGM"/>
-                            <constraint firstItem="LZb-od-4r9" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="-48" id="cvA-Qm-211"/>
+                            <constraint firstItem="LZb-od-4r9" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="-48" id="cvA-Qm-211">
+                                <variation key="widthClass=compact" constant="-36"/>
+                            </constraint>
                             <constraint firstItem="Ksb-In-ujf" firstAttribute="top" secondItem="LZb-od-4r9" secondAttribute="bottom" constant="8" id="qZY-Ds-Wub"/>
                             <constraint firstItem="Ksb-In-ujf" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="rCr-7w-ctA"/>
                             <constraint firstItem="LZb-od-4r9" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="yqX-al-F2q"/>
-                            <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="LZb-od-4r9" secondAttribute="trailing" constant="-48" id="zhT-Jb-ACE"/>
+                            <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="LZb-od-4r9" secondAttribute="trailing" constant="-48" id="zhT-Jb-ACE">
+                                <variation key="widthClass=compact" constant="-36"/>
+                            </constraint>
                         </constraints>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
@@ -695,11 +753,11 @@
                                 <include reference="ucI-Db-R1z"/>
                                 <exclude reference="fSQ-4J-RcM"/>
                                 <include reference="sp8-9d-5kd"/>
+                                <include reference="3yl-Wy-XAs"/>
+                                <include reference="YWE-3H-VQf"/>
                                 <include reference="0Q7-vq-ElA"/>
                                 <include reference="3SQ-Yb-8qU"/>
                                 <include reference="PJm-BU-Uth"/>
-                                <include reference="3yl-Wy-XAs"/>
-                                <include reference="YWE-3H-VQf"/>
                             </mask>
                         </variation>
                     </view>
@@ -962,7 +1020,7 @@ Watching movies or YouTube videos</string>
                                 <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </pageControl>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xfN-ga-vky" firstAttribute="top" secondItem="bBc-aL-JD5" secondAttribute="bottom" constant="8" id="1Lo-h9-QRB"/>
                             <constraint firstItem="OIh-hF-6gr" firstAttribute="top" secondItem="tNp-Aw-IKW" secondAttribute="bottom" constant="8" id="651-Z0-JBy"/>
@@ -1046,14 +1104,14 @@ Watching movies or YouTube videos</string>
                                 <include reference="9wS-gz-EZ6"/>
                                 <include reference="Jye-m0-c4N"/>
                                 <include reference="UbK-iM-ld5"/>
-                                <include reference="sAb-Wt-icB"/>
-                                <include reference="scZ-ZL-YN3"/>
                                 <include reference="DYc-8j-l40"/>
                                 <include reference="KHf-yP-dFS"/>
                                 <include reference="v1e-Dx-6Gg"/>
                                 <include reference="651-Z0-JBy"/>
                                 <include reference="RV0-EM-ywW"/>
                                 <include reference="wFx-4N-OrQ"/>
+                                <include reference="sAb-Wt-icB"/>
+                                <include reference="scZ-ZL-YN3"/>
                                 <include reference="bwE-0y-165"/>
                                 <include reference="h11-79-pLT"/>
                                 <include reference="mrq-ZP-6wt"/>
@@ -1129,7 +1187,10 @@ Watching movies or YouTube videos</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Education" width="1296" height="972"/>
         <image name="Facebook-48" width="36" height="36"/>
+        <image name="Family" width="512" height="420"/>
         <image name="Twitter-48" width="36" height="29"/>
+        <image name="WWDC" width="174" height="39"/>
     </resources>
 </document>

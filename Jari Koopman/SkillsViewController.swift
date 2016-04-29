@@ -18,10 +18,10 @@ class SkillsViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     
     let skillsArray: [String] = [
-        "I learned Swift in online courses at Teamtreehouse. I'm currently pretty much up to date with Swift at basic and intermediate level. I am stil working on expanding my knowledge about Swift by taking more courses and I learn more every day at my internship.",
-        "Python is the first programming language I ever touched, it was at my first secundary school where we did an ICT project where we learned Python. That started my love for programming and because I already was an Apple addict I started with developing apps.",
-        "I only started using Sketch a few weeks ago, I was searching for a design program for my apps that works easy and was not to expensive, I first looked at Adobe but I can't afford such programs at this point in time.",
-        "Next to some programming languages I speak (almost) flawles English and flawles Dutch. I learned most of my English on our trips to Australia and Tasmania. I also have an Anglia degree at advanced level whitch is CEFR level B2."
+        "I learned Swift in online courses at Teamtreehouse. I'm currently pretty much up to date with Swift at basic and intermediate level. I am still working on expanding my knowledge about Swift by taking more courses and I learn more every day at my internship.",
+        "Python is the first programming language I ever touched. It was at my first secundary school where we did an ICT project to learn Python. That started my love for programming and because I already was an Apple addict I started with developing apps.",
+        "I only started using Sketch a few weeks ago, I was searching for a design program for my apps that works easy and was not to expensive. I first looked at Adobe but I can't afford such programs at this point in time.",
+        "Next to some programming languages I speak (almost) flawles English and flawles Dutch. I learned most of my English on our trips to Australia and Tasmania. I also have an Anglia degree at intermediate level which is CEFR level B1."
     ]
     
     
