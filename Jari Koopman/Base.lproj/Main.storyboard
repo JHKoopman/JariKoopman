@@ -144,7 +144,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-EU-KHc">
                                 <rect key="frame" x="20" y="219" width="560" height="162.5"/>
-                                <mutableString key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do a internship at an appbuilding business as long as my marks stay high enough. At my internship I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They've got loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</mutableString>
+                                <string key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do a internship at an appbuilding business as long as my marks stay high enough. At my internship I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They've got loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -197,59 +197,6 @@
             </objects>
             <point key="canvasLocation" x="450" y="1089"/>
         </scene>
-        <!--Family Pictures View Controller-->
-        <scene sceneID="SEo-xz-uxZ">
-            <objects>
-                <viewController id="isc-Uc-Nff" customClass="FamilyPicturesViewController" customModule="Jari_Koopman" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ael-f6-ne1"/>
-                        <viewControllerLayoutGuide type="bottom" id="0bJ-g0-jUW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KDa-jF-ZA8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="K7y-N3-6AL">
-                                <rect key="frame" x="281" y="555" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWE-j1-MoW">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0bJ-g0-jUW" firstAttribute="top" secondItem="K7y-N3-6AL" secondAttribute="bottom" constant="8" id="Abv-uu-StS"/>
-                            <constraint firstAttribute="trailing" secondItem="iWE-j1-MoW" secondAttribute="trailing" id="QDK-Vb-fJQ"/>
-                            <constraint firstItem="iWE-j1-MoW" firstAttribute="leading" secondItem="KDa-jF-ZA8" secondAttribute="leading" id="WG6-DA-wuG"/>
-                            <constraint firstItem="iWE-j1-MoW" firstAttribute="top" secondItem="KDa-jF-ZA8" secondAttribute="top" id="aUy-tf-r0e"/>
-                            <constraint firstItem="K7y-N3-6AL" firstAttribute="centerX" secondItem="KDa-jF-ZA8" secondAttribute="centerX" id="iYF-dZ-n5V"/>
-                            <constraint firstItem="0bJ-g0-jUW" firstAttribute="top" secondItem="iWE-j1-MoW" secondAttribute="bottom" id="igc-su-hCt"/>
-                        </constraints>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="K7y-N3-6AL"/>
-                                <include reference="iWE-j1-MoW"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="QDK-Vb-fJQ"/>
-                                <include reference="WG6-DA-wuG"/>
-                                <include reference="aUy-tf-r0e"/>
-                                <include reference="Abv-uu-StS"/>
-                                <include reference="igc-su-hCt"/>
-                                <include reference="iYF-dZ-n5V"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="pageControl" destination="K7y-N3-6AL" id="smc-J1-ru6"/>
-                        <outlet property="scrollView" destination="iWE-j1-MoW" id="UfX-Q8-yv6"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dnS-Dm-ZIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1137" y="-1062"/>
-        </scene>
         <!--Family-->
         <scene sceneID="VKU-wY-WVs">
             <objects>
@@ -269,17 +216,17 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-sK-TA3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-sK-TA3">
                                 <rect key="frame" x="20" y="481" width="560" height="61"/>
                                 <string key="text">In my family we all enjoy working with computers, next to that we like to wander around in the forest close to our home or in the mountains when we're on holiday.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
                                 <rect key="frame" x="20" y="179" width="560" height="294"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-RN-Nhx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-RN-Nhx">
                                 <rect key="frame" x="223" y="550" width="155" height="30"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.57254901960000004" blue="0.28235294119999998" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -291,9 +238,6 @@
                                         <include reference="OOY-Zg-uO9"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <segue destination="isc-Uc-Nff" kind="show" id="sRD-TC-Ryd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -494,7 +438,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-Ni-zag">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-Ni-zag">
                                 <rect key="frame" x="20" y="259.5" width="560" height="81.5"/>
                                 <string key="text">One of my greatest wishes is to go to the USA for study, work or just for holiday. When I heard about the WWDC Scholarships I got very excited and asked my school permission to work on an app for the contest. A dream would come true if I got the opportunity to attend WWDC.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
