@@ -147,7 +147,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-EU-KHc">
                                 <rect key="frame" x="20" y="417.5" width="560" height="162.5"/>
-                                <mutableString key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do an internship at an appbuilding business as long as my marks stay high enough. At my internship I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They've got loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</mutableString>
+                                <string key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do an internship at an appbuilding business as long as my marks stay high enough. At my internship I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They've got loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -511,33 +511,79 @@
                                     <action selector="twitterPressed" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="OhE-za-Dim"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fgt-qp-fkV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This map shows my house and my school:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOe-gy-0KW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JT-Qe-ROb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Show school"/>
+                                <connections>
+                                    <action selector="showOther:" destination="C1Q-Cp-cWG" eventType="touchUpInside" id="Xm5-oM-qc7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="108" id="0WQ-Qf-vOz">
                                 <variation key="widthClass=compact" constant="155"/>
                             </constraint>
+                            <constraint firstItem="8JT-Qe-ROb" firstAttribute="trailing" secondItem="Fgt-qp-fkV" secondAttribute="trailing" constant="-8" id="1Nc-lB-sWF"/>
                             <constraint firstItem="GLY-mZ-zga" firstAttribute="top" secondItem="Qth-OB-ewU" secondAttribute="bottom" constant="307" id="AS4-PS-DeK"/>
+                            <constraint firstItem="Fgt-qp-fkV" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="BAv-xE-fgm"/>
                             <constraint firstItem="zAd-Em-uzc" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="C65-0h-6rw"/>
+                            <constraint firstItem="8JT-Qe-ROb" firstAttribute="bottom" secondItem="Fgt-qp-fkV" secondAttribute="bottom" id="C6S-qW-z9e"/>
                             <constraint firstItem="GLY-mZ-zga" firstAttribute="top" secondItem="Gn9-Qx-xor" secondAttribute="bottom" constant="307" id="CCf-CA-jPh"/>
+                            <constraint firstItem="GOe-gy-0KW" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="H98-gb-cS9"/>
+                            <constraint firstItem="GLY-mZ-zga" firstAttribute="top" secondItem="Fgt-qp-fkV" secondAttribute="bottom" constant="8" id="Kgb-XD-mO5"/>
                             <constraint firstItem="cDC-f6-Okm" firstAttribute="top" secondItem="Ksb-In-ujf" secondAttribute="bottom" constant="8" id="LB6-vf-7d3"/>
+                            <constraint firstItem="Fgt-qp-fkV" firstAttribute="top" secondItem="Qth-OB-ewU" secondAttribute="bottom" constant="8" id="Mz9-Gi-rYS"/>
+                            <constraint firstItem="Fgt-qp-fkV" firstAttribute="top" secondItem="Gn9-Qx-xor" secondAttribute="bottom" constant="8" id="N1L-hI-v7e"/>
                             <constraint firstItem="LZb-od-4r9" firstAttribute="top" secondItem="LHq-gU-FkT" secondAttribute="bottom" constant="8" id="Qe4-0l-Wmp"/>
                             <constraint firstItem="zAd-Em-uzc" firstAttribute="top" secondItem="cDC-f6-Okm" secondAttribute="bottom" constant="8" id="ZH1-oQ-nXe"/>
                             <constraint firstItem="cDC-f6-Okm" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="bHI-L1-TGM"/>
                             <constraint firstItem="LZb-od-4r9" firstAttribute="leading" secondItem="Qth-OB-ewU" secondAttribute="trailing" constant="-48" id="cvA-Qm-211">
                                 <variation key="widthClass=compact" constant="-36"/>
                             </constraint>
+                            <constraint firstItem="Fgt-qp-fkV" firstAttribute="leading" secondItem="3bw-et-dS1" secondAttribute="leadingMargin" id="efd-wq-Wgf"/>
                             <constraint firstItem="Ksb-In-ujf" firstAttribute="top" secondItem="LZb-od-4r9" secondAttribute="bottom" constant="8" id="qZY-Ds-Wub"/>
                             <constraint firstItem="Ksb-In-ujf" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="rCr-7w-ctA"/>
+                            <constraint firstItem="GOe-gy-0KW" firstAttribute="top" secondItem="Fgt-qp-fkV" secondAttribute="top" id="xTz-mL-zms"/>
                             <constraint firstItem="LZb-od-4r9" firstAttribute="centerX" secondItem="3bw-et-dS1" secondAttribute="centerX" id="yqX-al-F2q"/>
                             <constraint firstItem="Gn9-Qx-xor" firstAttribute="leading" secondItem="LZb-od-4r9" secondAttribute="trailing" constant="-48" id="zhT-Jb-ACE">
                                 <variation key="widthClass=compact" constant="-36"/>
                             </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Fgt-qp-fkV"/>
+                                <exclude reference="GOe-gy-0KW"/>
+                                <exclude reference="8JT-Qe-ROb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="BAv-xE-fgm"/>
+                                <exclude reference="Mz9-Gi-rYS"/>
+                                <exclude reference="N1L-hI-v7e"/>
+                                <exclude reference="efd-wq-Wgf"/>
+                                <exclude reference="H98-gb-cS9"/>
+                                <exclude reference="xTz-mL-zms"/>
+                                <exclude reference="Kgb-XD-mO5"/>
+                                <exclude reference="1Nc-lB-sWF"/>
+                                <exclude reference="C6S-qW-z9e"/>
+                            </mask>
+                        </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Gn9-Qx-xor"/>
                                 <include reference="Ksb-In-ujf"/>
+                                <include reference="Fgt-qp-fkV"/>
+                                <include reference="GOe-gy-0KW"/>
+                                <include reference="8JT-Qe-ROb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Qe4-0l-Wmp"/>
@@ -549,17 +595,30 @@
                                 <include reference="bHI-L1-TGM"/>
                                 <include reference="C65-0h-6rw"/>
                                 <include reference="ZH1-oQ-nXe"/>
+                                <include reference="BAv-xE-fgm"/>
+                                <include reference="Mz9-Gi-rYS"/>
+                                <include reference="N1L-hI-v7e"/>
+                                <include reference="efd-wq-Wgf"/>
+                                <include reference="H98-gb-cS9"/>
+                                <include reference="xTz-mL-zms"/>
                                 <include reference="0WQ-Qf-vOz"/>
                                 <include reference="zhT-Jb-ACE"/>
                                 <include reference="AS4-PS-DeK"/>
                                 <include reference="CCf-CA-jPh"/>
+                                <include reference="Kgb-XD-mO5"/>
+                                <include reference="1Nc-lB-sWF"/>
+                                <include reference="C6S-qW-z9e"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Fgt-qp-fkV" id="rie-1p-XOZ"/>
+                        <outlet property="showOtherButton" destination="8JT-Qe-ROb" id="cxI-Ia-R2i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbZ-Uc-DhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="451" y="1867"/>
+            <point key="canvasLocation" x="450" y="1867"/>
         </scene>
         <!--Things I've done-->
         <scene sceneID="Zgk-W6-KN6">
