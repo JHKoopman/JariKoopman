@@ -142,16 +142,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Education" translatesAutoresizingMaskIntoConstraints="NO" id="Xp5-0u-deu">
+                                <rect key="frame" x="20" y="20" width="560" height="389.5"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-EU-KHc">
                                 <rect key="frame" x="20" y="417.5" width="560" height="162.5"/>
-                                <string key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do a internship at an appbuilding business as long as my marks stay high enough. At my internship I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They've got loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</string>
+                                <mutableString key="text">At the moment I'm in my third year at secundary school. I'm doing very well at school, that's majorly because I'm allowed to have a few hours a week to do an internship at an appbuilding business as long as my marks stay high enough. At my internship I learn a lot about building apps and coding in general. I follow my coding specific education at teamtreehouse. They've got loads of online courses in Swift, iOS, Python, design, and many more subjects I need for my app building. Until now I followed the complete iOS development with Swift course.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Education" translatesAutoresizingMaskIntoConstraints="NO" id="Xp5-0u-deu">
-                                <rect key="frame" x="20" y="20" width="560" height="389.5"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -209,51 +209,40 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-sK-TA3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-sK-TA3">
                                 <rect key="frame" x="20" y="481" width="560" height="61"/>
                                 <string key="text">In my family we all enjoy working with computers, next to that we like to wander around in the forest close to our home or in the mountains when we're on holiday.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Jm-1o5">
                                 <rect key="frame" x="20" y="179" width="560" height="294"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-RN-Nhx">
-                                <rect key="frame" x="223" y="550" width="155" height="30"/>
-                                <color key="backgroundColor" red="0.90196078430000004" green="0.57254901960000004" blue="0.28235294119999998" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="OOY-Zg-uO9"/>
-                                </constraints>
-                                <state key="normal" title="More family photos"/>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="OOY-Zg-uO9"/>
-                                    </mask>
-                                </variation>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yek-jB-pTD" firstAttribute="top" secondItem="Bqa-6E-cRn" secondAttribute="bottom" constant="8" id="360-st-XMf"/>
-                            <constraint firstItem="Rhh-8v-Mhe" firstAttribute="top" secondItem="kXF-RN-Nhx" secondAttribute="bottom" constant="20" id="6cB-Pp-s8d"/>
-                            <constraint firstItem="kXF-RN-Nhx" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="6fo-RF-Pru"/>
                             <constraint firstItem="yek-jB-pTD" firstAttribute="leading" secondItem="qxI-kr-kVg" secondAttribute="leadingMargin" id="9wk-tQ-qux"/>
                             <constraint firstItem="yek-jB-pTD" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="Bj4-lb-axn"/>
                             <constraint firstItem="DuY-sK-TA3" firstAttribute="leading" secondItem="qxI-kr-kVg" secondAttribute="leading" constant="20" id="HzS-pK-lfi"/>
+                            <constraint firstItem="Rhh-8v-Mhe" firstAttribute="top" secondItem="DuY-sK-TA3" secondAttribute="bottom" constant="58" id="MhW-oq-Nbc"/>
                             <constraint firstItem="rRg-Jm-1o5" firstAttribute="leading" secondItem="qxI-kr-kVg" secondAttribute="leading" constant="20" id="Twh-y5-AXg"/>
                             <constraint firstItem="rRg-Jm-1o5" firstAttribute="top" secondItem="yek-jB-pTD" secondAttribute="bottom" constant="8" id="Yeu-Kb-gKP"/>
                             <constraint firstItem="DuY-sK-TA3" firstAttribute="top" secondItem="rRg-Jm-1o5" secondAttribute="bottom" constant="8" id="af6-hi-Ypx"/>
-                            <constraint firstItem="kXF-RN-Nhx" firstAttribute="top" secondItem="DuY-sK-TA3" secondAttribute="bottom" constant="8" id="bRF-P6-ZK0"/>
                             <constraint firstItem="DuY-sK-TA3" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="g0i-wI-vmP"/>
                             <constraint firstItem="rRg-Jm-1o5" firstAttribute="centerX" secondItem="qxI-kr-kVg" secondAttribute="centerX" id="rdO-4O-77H"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MhW-oq-Nbc"/>
+                            </mask>
+                        </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="yek-jB-pTD"/>
                                 <include reference="DuY-sK-TA3"/>
                                 <include reference="rRg-Jm-1o5"/>
-                                <include reference="kXF-RN-Nhx"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="360-st-XMf"/>
@@ -265,9 +254,7 @@
                                 <include reference="HzS-pK-lfi"/>
                                 <include reference="af6-hi-Ypx"/>
                                 <include reference="g0i-wI-vmP"/>
-                                <include reference="6fo-RF-Pru"/>
-                                <include reference="bRF-P6-ZK0"/>
-                                <include reference="6cB-Pp-s8d"/>
+                                <include reference="MhW-oq-Nbc"/>
                             </mask>
                         </variation>
                     </view>
